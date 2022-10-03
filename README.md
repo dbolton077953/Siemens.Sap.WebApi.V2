@@ -54,7 +54,7 @@ Every project is different, so consider which of these sections apply to yours. 
 ## Name
 Siemens SAP Web API
 
-## Description
+# Description
 This rest API endpoint provides a couple of methods for calling SAP RFCs and BAPIs using Theobald's ERPCOnnect component
 ## Badges
 On some READMEs, you may see small images that convey metadata, such as whether or not all the tests are passing for the project. You can use Shields to add some to your README. Many services also have instructions for adding a badge.
@@ -62,13 +62,13 @@ On some READMEs, you may see small images that convey metadata, such as whether 
 ## Visuals
 Depending on what you are making, it can be a good idea to include screenshots or even a video (you'll frequently see GIFs rather than actual videos). Tools like ttygif can help, but check out Asciinema for a more sophisticated method.
 
-## Installation
+# Installation
 To install ensure the SAP Netweaver dll & library files are installed into the servers SYSWOW64 (for 32bit) or SYSTEM32 (for 64 bt) folders
 
-## Usage
+# Usage
 For an example of how tro import an order check out the provided .Net Core win forms app. For calling other RFCs examine the unit test projects. To run the unit test projects first start the Web API without being in DEBUG mode then you can run the test methods.
 
-## Support
+# Support
 To obtain ERPCOnnect support contact Theobald software via email support@theobald-software.com.
 
 ## Roadmap
@@ -84,8 +84,8 @@ You can also document commands to lint the code or run tests. These steps help t
 ## Authors and acknowledgment
 Show your appreciation to those who have contributed to the project.
 
-## License
-For open source projects, say how it is licensed.
+# License
+A annual licence (key based) is required for ERPConnect. Licence key set in the web api application.json file
 
 ## Project status
 If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.
