@@ -1,0 +1,253 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Projects\\Git\\siemens-sap-web-api\\Siemens.SAP.Web.API\\Siemens.Sap.WebAPI.csproj": {}
+  },
+  "projects": {
+    "D:\\Projects\\Git\\siemens-sap-web-api\\Siemens.Sap.ERPConnect.Utilities\\Siemens.Sap.ERPConnect.Utilities.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Projects\\Git\\siemens-sap-web-api\\Siemens.Sap.ERPConnect.Utilities\\Siemens.Sap.ERPConnect.Utilities.csproj",
+        "projectName": "Siemens.Sap.ERPConnect.Utilities",
+        "projectPath": "D:\\Projects\\Git\\siemens-sap-web-api\\Siemens.Sap.ERPConnect.Utilities\\Siemens.Sap.ERPConnect.Utilities.csproj",
+        "packagesPath": "C:\\Users\\gb7swid1\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\Git\\siemens-sap-web-api\\Siemens.Sap.ERPConnect.Utilities\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\gb7swid1\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Congleton.Packages.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "\\\\gbconv1a101srv\\References\\Packages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
+            "System.Configuration.ConfigurationManager": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "System.Net.Http": {
+              "target": "Package",
+              "version": "[4.3.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Projects\\Git\\siemens-sap-web-api\\Siemens.SAP.Web.API\\Siemens.Sap.WebAPI.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Projects\\Git\\siemens-sap-web-api\\Siemens.SAP.Web.API\\Siemens.Sap.WebAPI.csproj",
+        "projectName": "Siemens.Sap.WebAPI",
+        "projectPath": "D:\\Projects\\Git\\siemens-sap-web-api\\Siemens.SAP.Web.API\\Siemens.Sap.WebAPI.csproj",
+        "packagesPath": "C:\\Users\\gb7swid1\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\Git\\siemens-sap-web-api\\Siemens.SAP.Web.API\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\gb7swid1\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Congleton.Packages.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "\\\\gbconv1a101srv\\References\\Packages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\Projects\\Git\\siemens-sap-web-api\\Siemens.Sap.ERPConnect.Utilities\\Siemens.Sap.ERPConnect.Utilities.csproj": {
+                "projectPath": "D:\\Projects\\Git\\siemens-sap-web-api\\Siemens.Sap.ERPConnect.Utilities\\Siemens.Sap.ERPConnect.Utilities.csproj"
+              },
+              "D:\\Projects\\Git\\siemens-sap-web-api\\Siemens.Sap.WebAPI.Common\\Siemens.Sap.WebAPI.Common.csproj": {
+                "projectPath": "D:\\Projects\\Git\\siemens-sap-web-api\\Siemens.Sap.WebAPI.Common\\Siemens.Sap.WebAPI.Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNet.WebApi.Core": {
+              "target": "Package",
+              "version": "[5.2.9, )"
+            },
+            "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
+              "target": "Package",
+              "version": "[1.15.1, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.2.3, )"
+            },
+            "System.Configuration.ConfigurationManager": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Projects\\Git\\siemens-sap-web-api\\Siemens.Sap.WebAPI.Common\\Siemens.Sap.WebAPI.Common.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Projects\\Git\\siemens-sap-web-api\\Siemens.Sap.WebAPI.Common\\Siemens.Sap.WebAPI.Common.csproj",
+        "projectName": "Siemens.Sap.WebAPI.Common",
+        "projectPath": "D:\\Projects\\Git\\siemens-sap-web-api\\Siemens.Sap.WebAPI.Common\\Siemens.Sap.WebAPI.Common.csproj",
+        "packagesPath": "C:\\Users\\gb7swid1\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\Git\\siemens-sap-web-api\\Siemens.Sap.WebAPI.Common\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\gb7swid1\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Congleton.Packages.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "\\\\gbconv1a101srv\\References\\Packages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\Projects\\Git\\siemens-sap-web-api\\Siemens.Sap.ERPConnect.Utilities\\Siemens.Sap.ERPConnect.Utilities.csproj": {
+                "projectPath": "D:\\Projects\\Git\\siemens-sap-web-api\\Siemens.Sap.ERPConnect.Utilities\\Siemens.Sap.ERPConnect.Utilities.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Mvc.Core": {
+              "target": "Package",
+              "version": "[2.2.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
