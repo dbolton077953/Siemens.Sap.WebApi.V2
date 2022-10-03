@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "M1kbmHm/WgSU7JmhKgFduwG/+5dYuPUVZAZi9vPwGZ8=",
+  "Source": "Siemens.Sap.WebAPI",
+  "BasePath": "_content/Siemens.Sap.WebAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
