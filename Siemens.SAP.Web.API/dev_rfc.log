@@ -8,3 +8,527 @@ NW RFC Library: SDK variant, Release 750 Patch Level 8, Compiled on Apr 17 2021 
 
 2022-10-03 12:09:27.251947 [15128] >> Info entry
 	Did find config file D:\Projects\Git\siemens-sap-web-api\Siemens.SAP.Web.API\sapnwrfc.ini.
+
+**** Log file opened at 2022-10-05 10:12:24.389980 UTC+01:00 (GMT Standard Time), Encoding UTF-8
+NW RFC Library: Kernel variant, Release 750 Patch Level 9, Compiled on May 14 2022 04:53:01
+ CPIC library: 753.2021.05.10 version 3, NI library: 40, Kernel Release: 753 Patch Level 1017
+ Current working directory: D:\Projects\Git\siemens-sap-web-api\Siemens.SAP.Web.API, Program: Siemens
+ Hardware: PC with Windows NT 12x AMD64 Level 6 (Mod 165 Step 2), Operating_system: Windows NT 10.0
+ Hostname: MD62NEBC, IP address: 192.168.1.108, IPv6 address: ::1
+
+2022-10-05 10:12:24.390331 [10640] >> Error entry
+	[Handle: 2047776572944	ConvID: 	Target: 	SysID: 	SysNr: 	User: 	Codepage: 4103]
+	RfcCommunicationException: Return Value: -102, Code: RFC_COMMUNICATION_FAILURE, Message: 
+ERROR       service 'sapmsD1Q' unknown
+TIME        Wed Oct  5 10:12:24 2022
+RELEASE     753
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -3
+MODULE      D:/depot/bas/753_REL/src/base/ni/ninti.c
+LINE        939
+DETAIL      NiPGetServByName: 'sapmsD1Q' not found
+SYSTEM CALL getaddrinfo
+COUNTER     1
+
+
+**** Log file opened at 2022-10-05 10:13:44.620011 UTC+01:00 (GMT Standard Time), Encoding UTF-8
+NW RFC Library: Kernel variant, Release 750 Patch Level 9, Compiled on May 14 2022 04:53:01
+ CPIC library: 753.2021.05.10 version 3, NI library: 40, Kernel Release: 753 Patch Level 1017
+ Current working directory: D:\Projects\Git\siemens-sap-web-api\Siemens.SAP.Web.API, Program: Siemens
+ Hardware: PC with Windows NT 12x AMD64 Level 6 (Mod 165 Step 2), Operating_system: Windows NT 10.0
+ Hostname: MD62NEBC, IP address: 192.168.1.108, IPv6 address: ::1
+
+2022-10-05 10:13:44.620106 [24964] >> Error entry
+	[Handle: 2346758540976	ConvID: 	Target: 	SysID: 	SysNr: 	User: 	Codepage: 4103]
+	RfcCommunicationException: Return Value: -102, Code: RFC_COMMUNICATION_FAILURE, Message: 
+ERROR       service 'sapmsD1Q' unknown
+TIME        Wed Oct  5 10:13:44 2022
+RELEASE     753
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -3
+MODULE      D:/depot/bas/753_REL/src/base/ni/ninti.c
+LINE        939
+DETAIL      NiPGetServByName: 'sapmsD1Q' not found
+SYSTEM CALL getaddrinfo
+COUNTER     1
+
+
+**** Log file opened at 2022-10-05 10:21:47.397541 UTC+01:00 (GMT Standard Time), Encoding UTF-8
+NW RFC Library: Kernel variant, Release 750 Patch Level 9, Compiled on May 14 2022 04:53:01
+ CPIC library: 753.2021.05.10 version 3, NI library: 40, Kernel Release: 753 Patch Level 1017
+ Current working directory: D:\Projects\Git\siemens-sap-web-api\Siemens.SAP.Web.API, Program: Siemens
+ Hardware: PC with Windows NT 12x AMD64 Level 6 (Mod 165 Step 2), Operating_system: Windows NT 10.0
+ Hostname: MD62NEBC, IP address: 192.168.1.108, IPv6 address: ::1
+
+2022-10-05 10:21:47.397656 [24012] >> Error entry
+	[Handle: 2310235065648	ConvID: 	Target: 	SysID: 	SysNr: 	User: 	Codepage: 4103]
+	RfcCommunicationException: Return Value: -102, Code: RFC_COMMUNICATION_FAILURE, Message: 
+ERROR       service 'sapmsD1Q' unknown
+TIME        Wed Oct  5 10:21:47 2022
+RELEASE     753
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -3
+MODULE      D:/depot/bas/753_REL/src/base/ni/ninti.c
+LINE        939
+DETAIL      NiPGetServByName: 'sapmsD1Q' not found
+SYSTEM CALL getaddrinfo
+COUNTER     1
+
+
+**** Log file opened at 2022-10-05 13:07:47.834797 UTC+01:00 (GMT Standard Time), Encoding UTF-8
+NW RFC Library: Kernel variant, Release 750 Patch Level 9, Compiled on May 14 2022 04:53:01
+ CPIC library: 753.2021.05.10 version 3, NI library: 40, Kernel Release: 753 Patch Level 1017
+ Current working directory: D:\Projects\Git\siemens-sap-web-api\Siemens.SAP.Web.API, Program: Siemens
+ Hardware: PC with Windows NT 12x AMD64 Level 6 (Mod 165 Step 2), Operating_system: Windows NT 10.0
+ Hostname: MD62NEBC, IP address: 192.168.1.108, IPv6 address: ::1
+
+2022-10-05 13:07:47.835086 [19148] >> Error entry
+	[Handle: 2822408101216	ConvID: 	Target: 	SysID: 	SysNr: 	User: 	Codepage: 4103]
+	RfcCommunicationException: Return Value: -102, Code: RFC_COMMUNICATION_FAILURE, Message: 
+ERROR       service 'sapmsD1Q' unknown
+TIME        Wed Oct  5 13:07:47 2022
+RELEASE     753
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -3
+MODULE      D:/depot/bas/753_REL/src/base/ni/ninti.c
+LINE        939
+DETAIL      NiPGetServByName: 'sapmsD1Q' not found
+SYSTEM CALL getaddrinfo
+COUNTER     1
+
+2022-10-05 13:08:35.655448 [23784] >> Error entry
+	[Handle: 2822408581472	ConvID: 	Target: 	SysID: 	SysNr: 	User: 	Codepage: 4103]
+	RfcCommunicationException: Return Value: -102, Code: RFC_COMMUNICATION_FAILURE, Message: 
+ERROR       service 'sapmsD1Q' unknown
+TIME        Wed Oct  5 13:08:35 2022
+RELEASE     753
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -3
+MODULE      D:/depot/bas/753_REL/src/base/ni/nixxsl.cpp
+LINE        189
+DETAIL      NiSrvLGetServNo: service name cached as unknown
+COUNTER     1
+
+2022-10-05 13:10:05.372687 [17240] >> Error entry
+	[Handle: 2822413667232	ConvID: 	Target: 	SysID: 	SysNr: 	User: 	Codepage: 4103]
+	RfcCommunicationException: Return Value: -102, Code: RFC_COMMUNICATION_FAILURE, Message: 
+ERROR       service 'sapmsD1Q' unknown
+TIME        Wed Oct  5 13:10:05 2022
+RELEASE     753
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -3
+MODULE      D:/depot/bas/753_REL/src/base/ni/nixxsl.cpp
+LINE        189
+DETAIL      NiSrvLGetServNo: service name cached as unknown
+COUNTER     1
+
+
+**** Log file opened at 2022-10-05 13:14:19.197495 UTC+01:00 (GMT Standard Time), Encoding UTF-8
+NW RFC Library: Kernel variant, Release 750 Patch Level 9, Compiled on May 14 2022 04:53:01
+ CPIC library: 753.2021.05.10 version 3, NI library: 40, Kernel Release: 753 Patch Level 1017
+ Current working directory: D:\Projects\Git\siemens-sap-web-api\Siemens.SAP.Web.API, Program: Siemens
+ Hardware: PC with Windows NT 12x AMD64 Level 6 (Mod 165 Step 2), Operating_system: Windows NT 10.0
+ Hostname: MD62NEBC, IP address: 192.168.1.108, IPv6 address: ::1
+
+2022-10-05 13:14:19.197603 [25136] >> Error entry
+	[Handle: 1765227617280	ConvID: 	Target: 	SysID: 	SysNr: 	User: 	Codepage: 4103]
+	RfcCommunicationException: Return Value: -102, Code: RFC_COMMUNICATION_FAILURE, Message: 
+ERROR       service 'sapmsD1Q' unknown
+TIME        Wed Oct  5 13:14:19 2022
+RELEASE     753
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -3
+MODULE      D:/depot/bas/753_REL/src/base/ni/ninti.c
+LINE        939
+DETAIL      NiPGetServByName: 'sapmsD1Q' not found
+SYSTEM CALL getaddrinfo
+COUNTER     1
+
+2022-10-05 13:15:23.846057 [06320] >> Error entry
+	[Handle: 1765224580800	ConvID: 	Target: 	SysID: 	SysNr: 	User: 	Codepage: 4103]
+	RfcCommunicationException: Return Value: -102, Code: RFC_COMMUNICATION_FAILURE, Message: 
+ERROR       service 'sapmsD1Q' unknown
+TIME        Wed Oct  5 13:15:23 2022
+RELEASE     753
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -3
+MODULE      D:/depot/bas/753_REL/src/base/ni/nixxsl.cpp
+LINE        189
+DETAIL      NiSrvLGetServNo: service name cached as unknown
+COUNTER     1
+
+
+**** Log file opened at 2022-10-05 13:52:00.193168 UTC+01:00 (GMT Standard Time), Encoding UTF-8
+NW RFC Library: Kernel variant, Release 750 Patch Level 9, Compiled on May 14 2022 04:53:01
+ CPIC library: 753.2021.05.10 version 3, NI library: 40, Kernel Release: 753 Patch Level 1017
+ Current working directory: D:\Projects\Git\siemens-sap-web-api\Siemens.SAP.Web.API, Program: Siemens
+ Hardware: PC with Windows NT 12x AMD64 Level 6 (Mod 165 Step 2), Operating_system: Windows NT 10.0
+ Hostname: MD62NEBC, IP address: 192.168.1.108, IPv6 address: ::1
+
+2022-10-05 13:52:00.193266 [06768] >> Error entry
+	[Handle: 1681437491552	ConvID: 07068274	Target: demchdc81jx.dc4ca.siemens.de	SysID: D1Q	SysNr: 02	User: RFC_CPO	Mandant: 100	Language: E	Codepage: 4103]
+	RfcCommunicationException: Return Value: 20, Code: RFC_COMMUNICATION_FAILURE, Message: 
+LOCATION    CPIC (TCP/IP) with Unicode
+ERROR       GSS-API(maj): No credentials were supplied
+            Unable to establish the security context
+            target="p:CN=rlp-test.siemens.com, C=DE, O=Siemens, OU=CIT"
+TIME        Wed Oct  5 13:52:00 2022
+RELEASE     753
+COMPONENT   SNC (Secure Network Communication)
+VERSION     6
+RC          -4
+MODULE      D:/depot/bas/753_REL/src/krn/snc/sncxxall.c
+LINE        3604
+DETAIL      SncPEstablishContext
+SYSTEM CALL gss_init_sec_context
+COUNTER     4
+
+2022-10-05 13:56:18.401560 [12684] >> Error entry
+	[Handle: 1660007426864	ConvID: 07687510	Target: demchdc81jx.dc4ca.siemens.de	SysID: D1Q	SysNr: 02	User: RFC_CPO	Mandant: 100	Language: E	Codepage: 4103]
+	RfcCommunicationException: Return Value: 20, Code: RFC_COMMUNICATION_FAILURE, Message: 
+LOCATION    CPIC (TCP/IP) with Unicode
+ERROR       GSS-API(maj): No credentials were supplied
+            Unable to establish the security context
+            target="p:CN=rlp-test.siemens.com, C=DE, O=Siemens, OU=CIT"
+TIME        Wed Oct  5 13:56:18 2022
+RELEASE     753
+COMPONENT   SNC (Secure Network Communication)
+VERSION     6
+RC          -4
+MODULE      D:/depot/bas/753_REL/src/krn/snc/sncxxall.c
+LINE        3604
+DETAIL      SncPEstablishContext
+SYSTEM CALL gss_init_sec_context
+COUNTER     4
+
+2022-10-05 13:56:39.726694 [12684] >> Error entry
+	[Handle: 1660012269152	ConvID: 07726835	Target: demchdc81jx.dc4ca.siemens.de	SysID: D1Q	SysNr: 02	User: RFC_CPO	Mandant: 100	Language: E	Codepage: 4103]
+	RfcCommunicationException: Return Value: 20, Code: RFC_COMMUNICATION_FAILURE, Message: 
+LOCATION    CPIC (TCP/IP) with Unicode
+ERROR       GSS-API(maj): No credentials were supplied
+            Unable to establish the security context
+            target="p:CN=rlp-test.siemens.com, C=DE, O=Siemens, OU=CIT"
+TIME        Wed Oct  5 13:56:39 2022
+RELEASE     753
+COMPONENT   SNC (Secure Network Communication)
+VERSION     6
+RC          -4
+MODULE      D:/depot/bas/753_REL/src/krn/snc/sncxxall.c
+LINE        3604
+DETAIL      SncPEstablishContext
+SYSTEM CALL gss_init_sec_context
+COUNTER     8
+
+2022-10-05 14:02:36.492829 [11880] >> Error entry
+	[Handle: 1660011454752	ConvID: 07466612	Target: demchdc81jx.dc4ca.siemens.de	SysID: D1Q	SysNr: 02	User: RFC_CPO	Mandant: 100	Language: E	Codepage: 4103]
+	RfcCommunicationException: Return Value: 20, Code: RFC_COMMUNICATION_FAILURE, Message: 
+LOCATION    CPIC (TCP/IP) with Unicode
+ERROR       GSS-API(maj): No credentials were supplied
+            Unable to establish the security context
+            target="p:CN=rlp-test.siemens.com, C=DE, O=Siemens, OU=CIT"
+TIME        Wed Oct  5 14:02:36 2022
+RELEASE     753
+COMPONENT   SNC (Secure Network Communication)
+VERSION     6
+RC          -4
+MODULE      D:/depot/bas/753_REL/src/krn/snc/sncxxall.c
+LINE        3604
+DETAIL      SncPEstablishContext
+SYSTEM CALL gss_init_sec_context
+COUNTER     4
+
+2022-10-05 14:08:48.012450 [08544] >> Error entry
+	[Handle: 1660011431664	ConvID: 08245083	Target: demchdc81jx.dc4ca.siemens.de	SysID: D1Q	SysNr: 02	User: RFC_CPO	Mandant: 100	Language: E	Codepage: 4103]
+	RfcCommunicationException: Return Value: 20, Code: RFC_COMMUNICATION_FAILURE, Message: 
+LOCATION    CPIC (TCP/IP) with Unicode
+ERROR       GSS-API(maj): No credentials were supplied
+            Unable to establish the security context
+            target="p:CN=rlp-test.siemens.com, C=DE, O=Siemens, OU=CIT"
+TIME        Wed Oct  5 14:08:47 2022
+RELEASE     753
+COMPONENT   SNC (Secure Network Communication)
+VERSION     6
+RC          -4
+MODULE      D:/depot/bas/753_REL/src/krn/snc/sncxxall.c
+LINE        3604
+DETAIL      SncPEstablishContext
+SYSTEM CALL gss_init_sec_context
+COUNTER     4
+
+
+**** Log file opened at 2022-10-05 14:10:47.329840 UTC+01:00 (GMT Standard Time), Encoding UTF-8
+NW RFC Library: Kernel variant, Release 750 Patch Level 9, Compiled on May 14 2022 04:53:01
+ CPIC library: 753.2021.05.10 version 3, NI library: 40, Kernel Release: 753 Patch Level 1017
+ Current working directory: D:\Projects\Git\siemens-sap-web-api\Siemens.SAP.Web.API, Program: Siemens
+ Hardware: PC with Windows NT 12x AMD64 Level 6 (Mod 165 Step 2), Operating_system: Windows NT 10.0
+ Hostname: MD62NEBC, IP address: 192.168.1.108, IPv6 address: ::1
+
+2022-10-05 14:10:47.329969 [16084] >> Error entry
+	[Handle: 1520339906720	ConvID: 08512291	Target: demchdc81jx.dc4ca.siemens.de	SysID: D1Q	SysNr: 02	User: RFC_CPO	Mandant: 100	Language: E	Codepage: 4103]
+	RfcCommunicationException: Return Value: 20, Code: RFC_COMMUNICATION_FAILURE, Message: 
+LOCATION    CPIC (TCP/IP) with Unicode
+ERROR       GSS-API(maj): No credentials were supplied
+            Unable to establish the security context
+            target="p:CN=rlp-test.siemens.com, C=DE, O=Siemens, OU=CIT"
+TIME        Wed Oct  5 14:10:47 2022
+RELEASE     753
+COMPONENT   SNC (Secure Network Communication)
+VERSION     6
+RC          -4
+MODULE      D:/depot/bas/753_REL/src/krn/snc/sncxxall.c
+LINE        3604
+DETAIL      SncPEstablishContext
+SYSTEM CALL gss_init_sec_context
+COUNTER     4
+
+2022-10-05 14:12:29.620117 [08996] >> Error entry
+	[Handle: 1520380491920	ConvID: 08731513	Target: demchdc81jx.dc4ca.siemens.de	SysID: D1Q	SysNr: 02	User: RFC_CPO	Mandant: 100	Language: E	Codepage: 4103]
+	RfcCommunicationException: Return Value: 20, Code: RFC_COMMUNICATION_FAILURE, Message: 
+LOCATION    CPIC (TCP/IP) with Unicode
+ERROR       GSS-API(maj): No credentials were supplied
+            Unable to establish the security context
+            target="p:CN=rlp-test.siemens.com, C=DE, O=Siemens, OU=CIT"
+TIME        Wed Oct  5 14:12:29 2022
+RELEASE     753
+COMPONENT   SNC (Secure Network Communication)
+VERSION     6
+RC          -4
+MODULE      D:/depot/bas/753_REL/src/krn/snc/sncxxall.c
+LINE        3604
+DETAIL      SncPEstablishContext
+SYSTEM CALL gss_init_sec_context
+COUNTER     4
+
+
+**** Log file opened at 2022-10-05 14:13:19.274002 UTC+01:00 (GMT Standard Time), Encoding UTF-8
+NW RFC Library: Kernel variant, Release 750 Patch Level 9, Compiled on May 14 2022 04:53:01
+ CPIC library: 753.2021.05.10 version 3, NI library: 40, Kernel Release: 753 Patch Level 1017
+ Current working directory: D:\Projects\Git\siemens-sap-web-api\Siemens.SAP.Web.API, Program: Siemens
+ Hardware: PC with Windows NT 12x AMD64 Level 6 (Mod 165 Step 2), Operating_system: Windows NT 10.0
+ Hostname: MD62NEBC, IP address: 192.168.1.108, IPv6 address: ::1
+
+2022-10-05 14:13:19.274079 [21440] >> Error entry
+	[Handle: 1976921721056	ConvID: 08826084	Target: demchdc81jx.dc4ca.siemens.de	SysID: D1Q	SysNr: 02	User: RFC_CPO	Mandant: 100	Language: E	Codepage: 4103]
+	RfcCommunicationException: Return Value: 20, Code: RFC_COMMUNICATION_FAILURE, Message: 
+LOCATION    CPIC (TCP/IP) with Unicode
+ERROR       GSS-API(maj): No credentials were supplied
+            Unable to establish the security context
+            target="p:CN=rlp-test.siemens.com, C=DE, O=Siemens, OU=CIT"
+TIME        Wed Oct  5 14:13:19 2022
+RELEASE     753
+COMPONENT   SNC (Secure Network Communication)
+VERSION     6
+RC          -4
+MODULE      D:/depot/bas/753_REL/src/krn/snc/sncxxall.c
+LINE        3604
+DETAIL      SncPEstablishContext
+SYSTEM CALL gss_init_sec_context
+COUNTER     4
+
+
+**** Log file opened at 2022-10-05 14:18:41.336460 UTC+01:00 (GMT Standard Time), Encoding UTF-8
+NW RFC Library: Kernel variant, Release 750 Patch Level 9, Compiled on May 14 2022 04:53:01
+ CPIC library: 753.2021.05.10 version 3, NI library: 40, Kernel Release: 753 Patch Level 1017
+ Current working directory: D:\Projects\Git\siemens-sap-web-api\Siemens.SAP.Web.API, Program: Siemens
+ Hardware: PC with Windows NT 12x AMD64 Level 6 (Mod 165 Step 2), Operating_system: Windows NT 10.0
+ Hostname: MD62NEBC, IP address: 192.168.1.108, IPv6 address: ::1
+
+2022-10-05 14:18:41.336893 [12964] >> Error entry
+	[Handle: 2368935892224	ConvID: 08547223	Target: demchdc81jx.dc4ca.siemens.de	SysID: D1Q	SysNr: 02	User: RFC_CPO	Mandant: 100	Language: E	Codepage: 4103]
+	RfcCommunicationException: Return Value: 20, Code: RFC_COMMUNICATION_FAILURE, Message: 
+LOCATION    CPIC (TCP/IP) with Unicode
+ERROR       GSS-API(maj): No credentials were supplied
+            Unable to establish the security context
+            target="p:CN=rlp-test.siemens.com, C=DE, O=Siemens, OU=CIT"
+TIME        Wed Oct  5 14:18:41 2022
+RELEASE     753
+COMPONENT   SNC (Secure Network Communication)
+VERSION     6
+RC          -4
+MODULE      D:/depot/bas/753_REL/src/krn/snc/sncxxall.c
+LINE        3604
+DETAIL      SncPEstablishContext
+SYSTEM CALL gss_init_sec_context
+COUNTER     4
+
+2022-10-05 14:20:58.804696 [08984] >> Error entry
+	[Handle: 2368936836080	ConvID: 08884691	Target: demchdc81jx.dc4ca.siemens.de	SysID: D1Q	SysNr: 02	User: RFC_CPO	Mandant: 100	Language: E	Codepage: 4103]
+	RfcCommunicationException: Return Value: 20, Code: RFC_COMMUNICATION_FAILURE, Message: 
+LOCATION    CPIC (TCP/IP) with Unicode
+ERROR       GSS-API(maj): No credentials were supplied
+            Unable to establish the security context
+            target="p:CN=rlp-test.siemens.com, C=DE, O=Siemens, OU=CIT"
+TIME        Wed Oct  5 14:20:58 2022
+RELEASE     753
+COMPONENT   SNC (Secure Network Communication)
+VERSION     6
+RC          -4
+MODULE      D:/depot/bas/753_REL/src/krn/snc/sncxxall.c
+LINE        3604
+DETAIL      SncPEstablishContext
+SYSTEM CALL gss_init_sec_context
+COUNTER     4
+
+
+**** Log file opened at 2022-10-05 14:21:55.483588 UTC+01:00 (GMT Standard Time), Encoding UTF-8
+NW RFC Library: Kernel variant, Release 750 Patch Level 9, Compiled on May 14 2022 04:53:01
+ CPIC library: 753.2021.05.10 version 3, NI library: 40, Kernel Release: 753 Patch Level 1017
+ Current working directory: D:\Projects\Git\siemens-sap-web-api\Siemens.SAP.Web.API, Program: Siemens
+ Hardware: PC with Windows NT 12x AMD64 Level 6 (Mod 165 Step 2), Operating_system: Windows NT 10.0
+ Hostname: MD62NEBC, IP address: 192.168.1.108, IPv6 address: ::1
+
+2022-10-05 14:21:55.483661 [01368] >> Error entry
+	[Handle: 2433671021440	ConvID: 08966360	Target: demchdc81jx.dc4ca.siemens.de	SysID: D1Q	SysNr: 02	User: RFC_CPO	Mandant: 100	Language: E	Codepage: 4103]
+	RfcCommunicationException: Return Value: 20, Code: RFC_COMMUNICATION_FAILURE, Message: 
+LOCATION    CPIC (TCP/IP) with Unicode
+ERROR       GSS-API(maj): No credentials were supplied
+            Unable to establish the security context
+            target="p:CN=rlp-test.siemens.com, C=DE, O=Siemens, OU=CIT"
+TIME        Wed Oct  5 14:21:55 2022
+RELEASE     753
+COMPONENT   SNC (Secure Network Communication)
+VERSION     6
+RC          -4
+MODULE      D:/depot/bas/753_REL/src/krn/snc/sncxxall.c
+LINE        3604
+DETAIL      SncPEstablishContext
+SYSTEM CALL gss_init_sec_context
+COUNTER     4
+
+
+**** Log file opened at 2022-10-05 14:26:02.213946 UTC+01:00 (GMT Standard Time), Encoding UTF-8
+NW RFC Library: Kernel variant, Release 750 Patch Level 9, Compiled on May 14 2022 04:53:01
+ CPIC library: 753.2021.05.10 version 3, NI library: 40, Kernel Release: 753 Patch Level 1017
+ Current working directory: D:\Projects\Git\siemens-sap-web-api\Siemens.SAP.Web.API, Program: Siemens
+ Hardware: PC with Windows NT 12x AMD64 Level 6 (Mod 165 Step 2), Operating_system: Windows NT 10.0
+ Hostname: MD62NEBC, IP address: 192.168.1.108, IPv6 address: ::1
+
+2022-10-05 14:26:02.214387 [17580] >> Error entry
+	[Handle: 2581178999232	ConvID: 09412087	Target: demchdc81jx.dc4ca.siemens.de	SysID: D1Q	SysNr: 02	User: RFC_CPO	Mandant: 100	Language: E	Codepage: 4103]
+	RfcCommunicationException: Return Value: 20, Code: RFC_COMMUNICATION_FAILURE, Message: 
+LOCATION    CPIC (TCP/IP) with Unicode
+ERROR       GSS-API(maj): No credentials were supplied
+            Unable to establish the security context
+            target="p:CN=rlp-test.siemens.com, C=DE, O=Siemens, OU=CIT"
+TIME        Wed Oct  5 14:26:02 2022
+RELEASE     753
+COMPONENT   SNC (Secure Network Communication)
+VERSION     6
+RC          -4
+MODULE      D:/depot/bas/753_REL/src/krn/snc/sncxxall.c
+LINE        3604
+DETAIL      SncPEstablishContext
+SYSTEM CALL gss_init_sec_context
+COUNTER     4
+
+
+**** Log file opened at 2022-10-05 14:51:58.445058 UTC+01:00 (GMT Standard Time), Encoding UTF-8
+NW RFC Library: Kernel variant, Release 750 Patch Level 9, Compiled on May 14 2022 04:53:01
+ CPIC library: 753.2021.05.10 version 3, NI library: 40, Kernel Release: 753 Patch Level 1017
+ Current working directory: D:\Projects\Git\siemens-sap-web-api\Siemens.SAP.Web.API, Program: Siemens
+ Hardware: PC with Windows NT 12x AMD64 Level 6 (Mod 165 Step 2), Operating_system: Windows NT 10.0
+ Hostname: MD62NEBC, IP address: 192.168.1.108, IPv6 address: ::1
+
+2022-10-05 14:51:58.445188 [13744] >> Error entry
+	[Handle: 1649855794976	ConvID: 11367398	Target: demchdc81jx.dc4ca.siemens.de	SysID: D1Q	SysNr: 02	User: RFC_CPO	Mandant: 100	Language: E	Codepage: 4103]
+	RfcCommunicationException: Return Value: 20, Code: RFC_COMMUNICATION_FAILURE, Message: 
+LOCATION    CPIC (TCP/IP) with Unicode
+ERROR       GSS-API(maj): No credentials were supplied
+            Unable to establish the security context
+            target="p:CN=rlp-test.siemens.com, C=DE, O=Siemens, OU=CIT"
+TIME        Wed Oct  5 14:51:58 2022
+RELEASE     753
+COMPONENT   SNC (Secure Network Communication)
+VERSION     6
+RC          -4
+MODULE      D:/depot/bas/753_REL/src/krn/snc/sncxxall.c
+LINE        3604
+DETAIL      SncPEstablishContext
+SYSTEM CALL gss_init_sec_context
+COUNTER     4
+
+
+**** Log file opened at 2022-10-05 16:44:35.625311 UTC+01:00 (GMT Standard Time), Encoding UTF-8
+NW RFC Library: Kernel variant, Release 750 Patch Level 9, Compiled on May 14 2022 04:53:01
+ CPIC library: 753.2021.05.10 version 3, NI library: 40, Kernel Release: 753 Patch Level 1017
+ Current working directory: D:\Projects\Git\siemens-sap-web-api\Siemens.SAP.Web.API, Program: Siemens
+ Hardware: PC with Windows NT 12x AMD64 Level 6 (Mod 165 Step 2), Operating_system: Windows NT 10.0
+ Hostname: MD62NEBC, IP address: 192.168.1.108, IPv6 address: ::1
+
+2022-10-05 16:44:35.625404 [19352] >> Error entry
+	[Handle: 1896950651424	ConvID: 18115210	Target: demchdc81jx.dc4ca.siemens.de	SysID: D1Q	SysNr: 02	User: RFC_CPO	Mandant: 100	Language: E	Codepage: 4103]
+	RfcCommunicationException: Return Value: 20, Code: RFC_COMMUNICATION_FAILURE, Message: 
+LOCATION    CPIC (TCP/IP) with Unicode
+ERROR       GSS-API(maj): No credentials were supplied
+            Unable to establish the security context
+            target="p:CN=rlp-test.siemens.com, C=DE, O=Siemens, OU=CIT"
+TIME        Wed Oct  5 16:44:35 2022
+RELEASE     753
+COMPONENT   SNC (Secure Network Communication)
+VERSION     6
+RC          -4
+MODULE      D:/depot/bas/753_REL/src/krn/snc/sncxxall.c
+LINE        3604
+DETAIL      SncPEstablishContext
+SYSTEM CALL gss_init_sec_context
+COUNTER     4
+
+
+**** Log file opened at 2022-10-05 16:51:28.754550 UTC+01:00 (GMT Standard Time), Encoding UTF-8
+NW RFC Library: Kernel variant, Release 750 Patch Level 9, Compiled on May 14 2022 04:53:01
+ CPIC library: 753.2021.05.10 version 3, NI library: 40, Kernel Release: 753 Patch Level 1017
+ Current working directory: D:\Projects\Git\siemens-sap-web-api\Siemens.SAP.Web.API, Program: Siemens
+ Hardware: PC with Windows NT 12x AMD64 Level 6 (Mod 165 Step 2), Operating_system: Windows NT 10.0
+ Hostname: MD62NEBC, IP address: 192.168.1.108, IPv6 address: ::1
+
+2022-10-05 16:51:28.754631 [19688] >> Error entry
+	[Handle: 2680554459552	ConvID: 17863349	Target: demchdc81jx.dc4ca.siemens.de	SysID: D1Q	SysNr: 02	User: RFC_CPO	Mandant: 100	Language: E	Codepage: 4103]
+	RfcCommunicationException: Return Value: 20, Code: RFC_COMMUNICATION_FAILURE, Message: 
+LOCATION    CPIC (TCP/IP) with Unicode
+ERROR       GSS-API(maj): No credentials were supplied
+            Unable to establish the security context
+            target="p:CN=rlp-test.siemens.com, C=DE, O=Siemens, OU=CIT"
+TIME        Wed Oct  5 16:51:28 2022
+RELEASE     753
+COMPONENT   SNC (Secure Network Communication)
+VERSION     6
+RC          -4
+MODULE      D:/depot/bas/753_REL/src/krn/snc/sncxxall.c
+LINE        3604
+DETAIL      SncPEstablishContext
+SYSTEM CALL gss_init_sec_context
+COUNTER     4
+
+
+**** Log file opened at 2022-10-05 16:56:28.205667 UTC+01:00 (GMT Standard Time), Encoding UTF-8
+NW RFC Library: Kernel variant, Release 750 Patch Level 9, Compiled on May 14 2022 04:53:01
+ CPIC library: 753.2021.05.10 version 3, NI library: 40, Kernel Release: 753 Patch Level 1017
+ Current working directory: D:\Projects\Git\siemens-sap-web-api\Siemens.SAP.Web.API, Program: Siemens
+ Hardware: PC with Windows NT 12x AMD64 Level 6 (Mod 165 Step 2), Operating_system: Windows NT 10.0
+ Hostname: MD62NEBC, IP address: 192.168.1.108, IPv6 address: ::1
+
+2022-10-05 16:56:28.205775 [18568] >> Error entry
+	[Handle: 2458131907936	ConvID: 	Target: 	SysID: 	SysNr: 	User: 	Codepage: 4103]
+	RfcCommunicationException: Return Value: 20, Code: RFC_COMMUNICATION_FAILURE, Message: 
+LOCATION    CPIC (TCP/IP) on local host md62nebc with Unicode
+ERROR       connection to partner 'demchdc81jx.dc4ca.siemens.de:4802'
+            broken
+TIME        Wed Oct  5 16:56:28 2022
+RELEASE     753
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -6
+MODULE      D:/depot/bas/753_REL/src/krn/si/gw/gwxx.c
+LINE        1179
+DETAIL      NiIRead: P=100.64.1.22:4802; L=192.168.1.108:3790
+SYSTEM CALL GwRead
+COUNTER     2
+

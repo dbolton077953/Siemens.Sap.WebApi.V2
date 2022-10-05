@@ -63,7 +63,8 @@ On some READMEs, you may see small images that convey metadata, such as whether 
 Depending on what you are making, it can be a good idea to include screenshots or even a video (you'll frequently see GIFs rather than actual videos). Tools like ttygif can help, but check out Asciinema for a more sophisticated method.
 
 # Installation
-To install ensure the SAP Netweaver dll & library files are installed into the servers SYSWOW64 (for 32bit) or SYSTEM32 (for 64 bt) folders
+Run the ERPConnect on the PC client or sever you wish to deploy to and then ensure the SAP Netweaver dll & library files are installed into the servers SYSWOW64 (for 32bit) or SYSTEM32 (for 64 bt) folders.
+They are included in the project and can be also found here \\gbconv1a202srv\CON Software Distribution\SAP\Netweaver Libraries
 
 # Usage
 For an example of how tro import an order check out the provided .Net Core win forms app. For calling other RFCs examine the unit test projects. To run the unit test projects first start the Web API without being in DEBUG mode then you can run the test methods.
