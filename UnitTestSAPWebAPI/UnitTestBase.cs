@@ -13,8 +13,8 @@ namespace UnitTestSAPWebAPI
     {
 
         protected ServiceProvider serviceProvider;
-       // protected string _webAPIEndPoint = "https://localhost:7145/api/v1/Rfc/CallRFC";
-        protected string _webAPIEndPoint = "https://stage-core.con.siemens.co.uk/Siemens.Sap.WebAPI/api/v1/Rfc/CallRFC";
+        protected string _webAPIEndPoint = "https://localhost:7145/api/v1/Rfc/CallRFC";
+        //protected string _webAPIEndPoint = "https://stage-core.con.siemens.co.uk/Siemens.Sap.WebAPI/api/v1/Rfc/CallRFC";
 
         protected void InitHttpClientFactory()
         {

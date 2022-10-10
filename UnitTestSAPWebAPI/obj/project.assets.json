@@ -7635,6 +7635,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "\\\\gbconv1a101srv\\References\\Packages": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {

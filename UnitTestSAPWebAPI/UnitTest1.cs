@@ -7,6 +7,7 @@ using NUnit.Framework;
 using Siemens.Sap.ERPConnect.Utilities;
 using Siemens.Sap.WebAPI.Common.Models;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Net;
 using System.Text.Json;
@@ -428,8 +429,78 @@ namespace UnitTestSAPWebAPI
 
         }
 
+        [Test]
+        public void GetMaterialAvailability()
+        {
+            var request = new SAPCommandRequest()
+            {
+
+                SAPRFCInformation = new ExecuteInformation()
+                {
+                    RFCUser = "RFC_GMC",
+                    CommandText = "BAPI_MATERIAL_AVAILABILITY",
+                    ParameterInformationArray = new ParameterInformation[]
+                    {
+
+                            new ParameterInformation()
+                            {
+                                ContainerName="BAPI_MATERIAL_AVAILABILITY",
+                                ContainerType = ContainerType.Function,
+                                ContainerOrdinalPosition=0,
+
+                                Parameters = new List<SAPParameter>(new SAPParameter[]
+                                {
+                                    new SAPParameter { Name = "PLANT", Value="1011" },
+                                    new SAPParameter { Name = "MATERIAL", Value="1790L801A"},
+                                    new SAPParameter { Name = "UNIT", Value="PC"}
+                                   
+                                })
+                            }
+
+                     },
+                    OutParameterInformationArray = new ParameterInformation[]
+                     {
+
+                        new ParameterInformation()
+                        {
+                            ContainerName = "AV_QTY_PLT",
+                            ContainerType = ContainerType.Function,
+                            ContainerOrdinalPosition = 0,
+                            Parameters = new List<SAPParameter>( new SAPParameter[]
+                            {
+                                new SAPParameter { Name = "AV_QTY_PLT", Value="" },
+                            })
+                        },
+                        new ParameterInformation()
+                        {
+                            ContainerName = "RETURN",
+                            ContainerType = ContainerType.Structure,
+                            ContainerOrdinalPosition = 1,
+                            Parameters = new List<SAPParameter>( new SAPParameter[]
+                            {
+                                new SAPParameter { Name = "CODE", Value="" },
+                                new SAPParameter { Name = "MESSAGE", Value=""}
+                            })
+
+                         }
+                     }
+                }
+            };
+
+            HttpResponseMessage response = _app.GetInfoFromSAP(request);
+
+            string apiResponse = response.Content.ReadAsStringAsync().Result;
+            var res = Newtonsoft.Json.JsonConvert.DeserializeObject<SAPCommandResponse>(apiResponse);
+
+            if(response.IsSuccessStatusCode)
+            {
+                Assert.IsTrue(res.OutParams[0].Value != "");
+            }
 
 
- 
+        }
+
+
+
     }
 }
