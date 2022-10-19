@@ -181,7 +181,7 @@ publish/
 *.azurePubxml
 # Note: Comment the next line if you want to checkin your web deploy settings,
 # but database connection strings (with potential passwords) will be unencrypted
-*.pubxml
+# *.pubxml
 *.publishproj
 
 # Microsoft Azure Web App publish settings. Comment the next line if you want to
@@ -359,10 +359,9 @@ MigrationBackup/
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
 
-Siemens.BuildProgressionVisualisation.Common/Models/AppSettings.cs~Moved this from my archive to my downloaded version as was missing some.
+# Exclude env files
+*.env
 
-BuildProgressionVisualisation/log.txt
-
-*.dll
-
-*.cache
+*/.vs
+*/bin/
+*/obj/
