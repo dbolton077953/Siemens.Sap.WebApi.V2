@@ -25,6 +25,7 @@ namespace TestOrderImport
         public DataTable[] GetOrders(string orderNumber)
         {
 
+
             DataTable[] tbls =null;
 
             try
@@ -120,6 +121,7 @@ namespace TestOrderImport
 
             using (var client = _cf.CreateClient(_webAPIEndPoint))
             {
+                client.Timeout = TimeSpan.FromMilliseconds(300000);
 
                 var request = new HttpRequestMessage()
                 {

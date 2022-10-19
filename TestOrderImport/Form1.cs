@@ -9,12 +9,12 @@ namespace TestOrderImport
     {
 
         private ServiceProvider serviceProvider;
-        //private const string _webAPIEndPoint="https://stage-core.con.siemens.co.uk/Siemens.Sap.WebAPI/api/v1/Rfc/CallRFC";
-        private const string _webAPIEndPoint = "https://localhost:7145/api/v1/Rfc/CallRFC";
+		private string _webAPIEndPoint;
+   
         public Form1()
         {
             InitializeComponent();
-            InitHttpClientFactory();
+			EndPointDDL.SelectedIndex = 0;
         }
 
         private void InitHttpClientFactory()
@@ -59,6 +59,7 @@ namespace TestOrderImport
 
 		private void GetBtn_Click(object sender, EventArgs e)
         {
+            InitHttpClientFactory();
             GetOrderOperations();
         }
 
@@ -94,5 +95,10 @@ namespace TestOrderImport
         {
 
         }
-    }
+
+		private void EndPointDDL_SelectedIndexChanged(object sender, EventArgs e)
+		{
+			_webAPIEndPoint = EndPointDDL.SelectedItem.ToString();
+		}
+	}
 }

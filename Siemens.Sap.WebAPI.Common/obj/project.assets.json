@@ -5272,5 +5272,811 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "The local source 'C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\' doesn't exist.",
+      "libraryId": "Microsoft.AspNetCore.Mvc.Core"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "The local source 'C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\' doesn't exist.",
+      "libraryId": "Microsoft.AspNetCore.Authentication.Core"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "The local source 'C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\' doesn't exist.",
+      "libraryId": "Microsoft.AspNetCore.Authentication.Abstractions"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "The local source 'C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\' doesn't exist.",
+      "libraryId": "Microsoft.AspNetCore.Http.Abstractions"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "The local source 'C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\' doesn't exist.",
+      "libraryId": "Microsoft.AspNetCore.Http.Features"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "The local source 'C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\' doesn't exist.",
+      "libraryId": "Microsoft.Extensions.Primitives"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "The local source 'C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\' doesn't exist.",
+      "libraryId": "System.Memory"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "The local source 'C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\' doesn't exist.",
+      "libraryId": "System.Runtime.CompilerServices.Unsafe"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "The local source 'C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\' doesn't exist.",
+      "libraryId": "System.Text.Encodings.Web"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "The local source 'C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\' doesn't exist.",
+      "libraryId": "Microsoft.Extensions.Options"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "The local source 'C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\' doesn't exist.",
+      "libraryId": "Microsoft.Extensions.DependencyInjection.Abstractions"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "The local source 'C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\' doesn't exist.",
+      "libraryId": "System.ComponentModel.Annotations"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "The local source 'C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\' doesn't exist.",
+      "libraryId": "Microsoft.AspNetCore.Authorization.Policy"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "The local source 'C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\' doesn't exist.",
+      "libraryId": "Microsoft.AspNetCore.Authorization"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "The local source 'C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\' doesn't exist.",
+      "libraryId": "Microsoft.AspNetCore.Hosting.Abstractions"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "The local source 'C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\' doesn't exist.",
+      "libraryId": "Microsoft.AspNetCore.Hosting.Server.Abstractions"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "The local source 'C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\' doesn't exist.",
+      "libraryId": "Microsoft.Extensions.Configuration.Abstractions"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "The local source 'C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\' doesn't exist.",
+      "libraryId": "Microsoft.Extensions.Hosting.Abstractions"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "The local source 'C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\' doesn't exist.",
+      "libraryId": "Microsoft.AspNetCore.Http"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "The local source 'C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\' doesn't exist.",
+      "libraryId": "Microsoft.AspNetCore.WebUtilities"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "The local source 'C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\' doesn't exist.",
+      "libraryId": "Microsoft.Net.Http.Headers"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "The local source 'C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\' doesn't exist.",
+      "libraryId": "System.Buffers"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "The local source 'C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\' doesn't exist.",
+      "libraryId": "Microsoft.Extensions.ObjectPool"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "The local source 'C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\' doesn't exist.",
+      "libraryId": "Microsoft.AspNetCore.Http.Extensions"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "The local source 'C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\' doesn't exist.",
+      "libraryId": "Microsoft.AspNetCore.Mvc.Abstractions"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "The local source 'C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\' doesn't exist.",
+      "libraryId": "Microsoft.AspNetCore.ResponseCaching.Abstractions"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "The local source 'C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\' doesn't exist.",
+      "libraryId": "Microsoft.AspNetCore.Routing"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "The local source 'C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\' doesn't exist.",
+      "libraryId": "Microsoft.AspNetCore.Routing.Abstractions"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "The local source 'C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\' doesn't exist.",
+      "libraryId": "Microsoft.Extensions.DependencyInjection"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "The local source 'C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\' doesn't exist.",
+      "libraryId": "Microsoft.Extensions.DependencyModel"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "The local source 'C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\' doesn't exist.",
+      "libraryId": "Microsoft.DotNet.PlatformAbstractions"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "The local source 'C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\' doesn't exist.",
+      "libraryId": "System.AppContext"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "The local source 'C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\' doesn't exist.",
+      "libraryId": "System.Runtime"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "The local source 'C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\' doesn't exist.",
+      "libraryId": "Microsoft.NETCore.Platforms"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "The local source 'C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\' doesn't exist.",
+      "libraryId": "Microsoft.NETCore.Targets"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "The local source 'C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\' doesn't exist.",
+      "libraryId": "System.Collections"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "The local source 'C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\' doesn't exist.",
+      "libraryId": "System.IO"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "The local source 'C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\' doesn't exist.",
+      "libraryId": "System.Text.Encoding"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "The local source 'C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\' doesn't exist.",
+      "libraryId": "System.Threading.Tasks"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "The local source 'C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\' doesn't exist.",
+      "libraryId": "System.IO.FileSystem"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "The local source 'C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\' doesn't exist.",
+      "libraryId": "System.IO.FileSystem.Primitives"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "The local source 'C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\' doesn't exist.",
+      "libraryId": "System.Runtime.Handles"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "The local source 'C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\' doesn't exist.",
+      "libraryId": "System.Reflection.TypeExtensions"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "The local source 'C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\' doesn't exist.",
+      "libraryId": "System.Reflection"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "The local source 'C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\' doesn't exist.",
+      "libraryId": "System.Reflection.Primitives"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "The local source 'C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\' doesn't exist.",
+      "libraryId": "System.Runtime.Extensions"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "The local source 'C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\' doesn't exist.",
+      "libraryId": "System.Runtime.InteropServices"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "The local source 'C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\' doesn't exist.",
+      "libraryId": "System.Runtime.InteropServices.RuntimeInformation"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "The local source 'C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\' doesn't exist.",
+      "libraryId": "runtime.native.System"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "The local source 'C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\' doesn't exist.",
+      "libraryId": "System.Resources.ResourceManager"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "The local source 'C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\' doesn't exist.",
+      "libraryId": "System.Globalization"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "The local source 'C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\' doesn't exist.",
+      "libraryId": "System.Threading"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "The local source 'C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\' doesn't exist.",
+      "libraryId": "Newtonsoft.Json"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "The local source 'C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\' doesn't exist.",
+      "libraryId": "Microsoft.CSharp"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "The local source 'C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\' doesn't exist.",
+      "libraryId": "System.Linq.Expressions"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "The local source 'C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\' doesn't exist.",
+      "libraryId": "System.Reflection.Emit"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "The local source 'C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\' doesn't exist.",
+      "libraryId": "System.Reflection.Emit.ILGeneration"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "The local source 'C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\' doesn't exist.",
+      "libraryId": "System.Reflection.Emit.Lightweight"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "The local source 'C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\' doesn't exist.",
+      "libraryId": "System.ObjectModel"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "The local source 'C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\' doesn't exist.",
+      "libraryId": "System.Reflection.Extensions"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "The local source 'C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\' doesn't exist.",
+      "libraryId": "System.Runtime.Serialization.Primitives"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "The local source 'C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\' doesn't exist.",
+      "libraryId": "System.Text.Encoding.Extensions"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "The local source 'C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\' doesn't exist.",
+      "libraryId": "System.Text.RegularExpressions"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "The local source 'C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\' doesn't exist.",
+      "libraryId": "System.Xml.ReaderWriter"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "The local source 'C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\' doesn't exist.",
+      "libraryId": "System.Xml.XDocument"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "The local source 'C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\' doesn't exist.",
+      "libraryId": "System.Diagnostics.Tools"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "The local source 'C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\' doesn't exist.",
+      "libraryId": "System.Diagnostics.Debug"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "The local source 'C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\' doesn't exist.",
+      "libraryId": "System.Dynamic.Runtime"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "The local source 'C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\' doesn't exist.",
+      "libraryId": "System.Linq"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "The local source 'C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\' doesn't exist.",
+      "libraryId": "Microsoft.Extensions.FileProviders.Abstractions"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "The local source 'C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\' doesn't exist.",
+      "libraryId": "Microsoft.Extensions.Logging.Abstractions"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "The local source 'C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\' doesn't exist.",
+      "libraryId": "System.Diagnostics.DiagnosticSource"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "The local source 'C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\' doesn't exist.",
+      "libraryId": "System.Threading.Tasks.Extensions"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "The local source 'C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\' doesn't exist.",
+      "libraryId": "Microsoft.Extensions.Configuration"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "The local source 'C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\' doesn't exist.",
+      "libraryId": "Microsoft.Extensions.Configuration.Abstractions"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "The local source 'C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\' doesn't exist.",
+      "libraryId": "Microsoft.Extensions.Primitives"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "The local source 'C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\' doesn't exist.",
+      "libraryId": "System.Runtime.CompilerServices.Unsafe"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "The local source 'C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\' doesn't exist.",
+      "libraryId": "Newtonsoft.Json"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "The local source 'C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\' doesn't exist.",
+      "libraryId": "System.Configuration.ConfigurationManager"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "The local source 'C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\' doesn't exist.",
+      "libraryId": "System.Security.Cryptography.ProtectedData"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "The local source 'C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\' doesn't exist.",
+      "libraryId": "System.Security.Permissions"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "The local source 'C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\' doesn't exist.",
+      "libraryId": "System.Security.AccessControl"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "The local source 'C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\' doesn't exist.",
+      "libraryId": "System.Windows.Extensions"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "The local source 'C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\' doesn't exist.",
+      "libraryId": "System.Drawing.Common"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "The local source 'C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\' doesn't exist.",
+      "libraryId": "Microsoft.Win32.SystemEvents"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "The local source 'C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\' doesn't exist.",
+      "libraryId": "System.Net.Http"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "The local source 'C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\' doesn't exist.",
+      "libraryId": "Microsoft.NETCore.Platforms"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "The local source 'C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\' doesn't exist.",
+      "libraryId": "runtime.native.System"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "The local source 'C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\' doesn't exist.",
+      "libraryId": "Microsoft.NETCore.Targets"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "The local source 'C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\' doesn't exist.",
+      "libraryId": "runtime.native.System.Net.Http"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "The local source 'C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\' doesn't exist.",
+      "libraryId": "runtime.native.System.Security.Cryptography.OpenSsl"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "The local source 'C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\' doesn't exist.",
+      "libraryId": "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "The local source 'C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\' doesn't exist.",
+      "libraryId": "runtime.fedora.23-x64.runtime.native.System.Security.Cryptography.OpenSsl"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "The local source 'C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\' doesn't exist.",
+      "libraryId": "runtime.fedora.24-x64.runtime.native.System.Security.Cryptography.OpenSsl"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "The local source 'C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\' doesn't exist.",
+      "libraryId": "runtime.opensuse.13.2-x64.runtime.native.System.Security.Cryptography.OpenSsl"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "The local source 'C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\' doesn't exist.",
+      "libraryId": "runtime.opensuse.42.1-x64.runtime.native.System.Security.Cryptography.OpenSsl"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "The local source 'C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\' doesn't exist.",
+      "libraryId": "runtime.osx.10.10-x64.runtime.native.System.Security.Cryptography.OpenSsl"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "The local source 'C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\' doesn't exist.",
+      "libraryId": "runtime.rhel.7-x64.runtime.native.System.Security.Cryptography.OpenSsl"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "The local source 'C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\' doesn't exist.",
+      "libraryId": "runtime.ubuntu.14.04-x64.runtime.native.System.Security.Cryptography.OpenSsl"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "The local source 'C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\' doesn't exist.",
+      "libraryId": "runtime.ubuntu.16.04-x64.runtime.native.System.Security.Cryptography.OpenSsl"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "The local source 'C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\' doesn't exist.",
+      "libraryId": "runtime.ubuntu.16.10-x64.runtime.native.System.Security.Cryptography.OpenSsl"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "The local source 'C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\' doesn't exist.",
+      "libraryId": "System.Collections"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "The local source 'C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\' doesn't exist.",
+      "libraryId": "System.Diagnostics.Debug"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "The local source 'C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\' doesn't exist.",
+      "libraryId": "System.Diagnostics.DiagnosticSource"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "The local source 'C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\' doesn't exist.",
+      "libraryId": "System.Reflection"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "The local source 'C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\' doesn't exist.",
+      "libraryId": "System.Reflection.Primitives"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "The local source 'C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\' doesn't exist.",
+      "libraryId": "System.Diagnostics.Tracing"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "The local source 'C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\' doesn't exist.",
+      "libraryId": "System.Globalization"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "The local source 'C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\' doesn't exist.",
+      "libraryId": "System.Globalization.Extensions"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "The local source 'C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\' doesn't exist.",
+      "libraryId": "System.IO"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "The local source 'C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\' doesn't exist.",
+      "libraryId": "System.IO.FileSystem"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "The local source 'C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\' doesn't exist.",
+      "libraryId": "System.IO.FileSystem.Primitives"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "The local source 'C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\' doesn't exist.",
+      "libraryId": "System.Net.Primitives"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "The local source 'C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\' doesn't exist.",
+      "libraryId": "System.Resources.ResourceManager"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "The local source 'C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\' doesn't exist.",
+      "libraryId": "System.Runtime"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "The local source 'C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\' doesn't exist.",
+      "libraryId": "System.Runtime.Extensions"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "The local source 'C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\' doesn't exist.",
+      "libraryId": "System.Runtime.Handles"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "The local source 'C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\' doesn't exist.",
+      "libraryId": "System.Runtime.InteropServices"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "The local source 'C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\' doesn't exist.",
+      "libraryId": "System.Security.Cryptography.Algorithms"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "The local source 'C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\' doesn't exist.",
+      "libraryId": "runtime.native.System.Security.Cryptography.Apple"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "The local source 'C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\' doesn't exist.",
+      "libraryId": "runtime.osx.10.10-x64.runtime.native.System.Security.Cryptography.Apple"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "The local source 'C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\' doesn't exist.",
+      "libraryId": "System.Runtime.Numerics"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "The local source 'C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\' doesn't exist.",
+      "libraryId": "System.Security.Cryptography.Encoding"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "The local source 'C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\' doesn't exist.",
+      "libraryId": "System.Collections.Concurrent"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "The local source 'C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\' doesn't exist.",
+      "libraryId": "System.Linq"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "The local source 'C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\' doesn't exist.",
+      "libraryId": "System.Security.Cryptography.OpenSsl"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "The local source 'C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\' doesn't exist.",
+      "libraryId": "System.Security.Cryptography.Primitives"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "The local source 'C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\' doesn't exist.",
+      "libraryId": "System.Security.Cryptography.X509Certificates"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "The local source 'C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\' doesn't exist.",
+      "libraryId": "System.Globalization.Calendars"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "The local source 'C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\' doesn't exist.",
+      "libraryId": "System.Security.Cryptography.Cng"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "The local source 'C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\' doesn't exist.",
+      "libraryId": "System.Security.Cryptography.Csp"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "The local source 'C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\' doesn't exist.",
+      "libraryId": "System.Text.Encoding"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "The local source 'C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\' doesn't exist.",
+      "libraryId": "System.Threading"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "The local source 'C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\' doesn't exist.",
+      "libraryId": "System.Threading.Tasks"
+    }
+  ]
 }
