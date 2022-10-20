@@ -21,19 +21,13 @@
 	  <PackageReference Include="System.Net.Http" Version="4.3.4" />
 	</ItemGroup>
 
-
 	<ItemGroup>
-		<Reference Include="StrongInterop.ADODB">
-			<HintPath>Interop_Libraries\StrongInterop.ADODB.dll</HintPath>
-		</Reference>
-	</ItemGroup>
-
-
-
-	<ItemGroup>
-		<Reference Include="ERPConnectStandard20">
-			<HintPath>Theobald\ERPConnectStandard20.dll</HintPath>
-		</Reference>
+	  <Reference Include="ERPConnectStandard20">
+	    <HintPath>..\..\Siemens.Sap.ERPConnect.Utilities\Theobald\ERPConnectStandard20.dll</HintPath>
+	  </Reference>
+	  <Reference Include="StrongInterop.ADODB">
+	    <HintPath>..\..\Siemens.Sap.ERPConnect.Utilities\Interop_Libraries\StrongInterop.ADODB.dll</HintPath>
+	  </Reference>
 	</ItemGroup>
 	
 </Project>
