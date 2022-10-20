@@ -366,3 +366,15 @@ BuildProgressionVisualisation/log.txt
 *.dll
 
 *.cache
+
+*.editorconfig
+
+Siemens.Sap.ERPConnect.Utilities/obj/Siemens.Sap.ERPConnect.Utilities.csproj.nuget.dgspec.json
+
+Siemens.Sap.ERPConnect.Utilities/obj/Siemens.Sap.ERPConnect.Utilities.csproj.nuget.g.props
+
+Siemens.Sap.WebAPI.Common/obj/Debug/net6.0/Siemens.Sap.WebAPI.Common.csproj.FileListAbsolute.txt
+
+Siemens.Sap.WebAPI.Common/obj/Siemens.Sap.WebAPI.Common.csproj.nuget.dgspec.json
+
+Siemens.Sap.WebAPI.Common/obj/Siemens.Sap.WebAPI.Common.csproj.nuget.g.props
