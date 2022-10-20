@@ -364,5 +364,6 @@ Siemens.BuildProgressionVisualisation.Common/Models/AppSettings.cs~Moved this fr
 BuildProgressionVisualisation/log.txt
 
 *.dll
-
+!Siemens.Sap.ERPConnect.Utilities\Theobald\ERPConnectStandard20.dll
+!Siemens.Sap.ERPConnect.Utilities\Interop_Libraries\StrongInterop.ADODB.dll
 *.cache
