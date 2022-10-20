@@ -359,6 +359,8 @@ MigrationBackup/
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
 
+*.project.assets.json
+
 Siemens.BuildProgressionVisualisation.Common/Models/AppSettings.cs~Moved this from my archive to my downloaded version as was missing some.
 
 BuildProgressionVisualisation/log.txt
