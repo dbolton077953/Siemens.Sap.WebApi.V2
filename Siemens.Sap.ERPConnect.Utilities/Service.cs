@@ -4,6 +4,7 @@ using System.Data;
 using Microsoft.Extensions.Configuration;
 using Siemens.Sap.ERPConnect.Utilities.Interfaces;
 using System.Drawing;
+using System.Globalization;
 
 namespace Siemens.Sap.ERPConnect.Utilities
 {
@@ -223,11 +224,11 @@ namespace Siemens.Sap.ERPConnect.Utilities
                     {
                         if (j < table.Columns.Count - 1)
                         {
-                            JSONString.Append("\"" + table.Columns[j].ColumnName.ToString() + "\":" + "\"" + table.Rows[i][j].ToString() + "\",");
+                            JSONString.Append("\"" + table.Columns[j].ColumnName.ToString() + "\":" + "\"" + GetFieldInfo(table.Columns[j].ColumnName.ToUpper(),table.Rows[i][j].ToString()) + "\",");
                         }
                         else if (j == table.Columns.Count - 1)
                         {
-                            JSONString.Append("\"" + table.Columns[j].ColumnName.ToString() + "\":" + "\"" + table.Rows[i][j].ToString() + "\"");
+                            JSONString.Append("\"" + table.Columns[j].ColumnName.ToString() + "\":" + "\"" + GetFieldInfo(table.Columns[j].ColumnName.ToUpper(), table.Rows[i][j].ToString()) + "\"");
                         }
                     }
                     if (i == table.Rows.Count - 1)
@@ -244,9 +245,40 @@ namespace Siemens.Sap.ERPConnect.Utilities
             return JSONString.ToString();
         }
 
-            #region IDisposable Members
+        private string GetFieldInfo(string columnName, string? columnData)
+        {
+            DateTime tempDate = new DateTime();
+           if (columnName.Contains("DATE") && columnData.Length==8)
+           {
+                CultureInfo provider = CultureInfo.InvariantCulture;
+                if (columnData == null || columnData == "00000000")
+                {
+                    tempDate = DateTime.MinValue.Date;
+    
+                }
+                else
+                {
+                    try
+                    {
+                        tempDate = DateTime.ParseExact(columnData, "yyyyMMdd", provider);
+                    }
+                    catch (Exception )
+                    {
+                        return columnData;
+                    }
 
-            public void Dispose()
+                 }
+                return tempDate.ToString("yyyy.MM.dd");
+           }
+           else
+            {
+                return columnData;
+            }
+        }
+
+        #region IDisposable Members
+
+        public void Dispose()
         {
             Dispose(true);
             GC.SuppressFinalize(this);
