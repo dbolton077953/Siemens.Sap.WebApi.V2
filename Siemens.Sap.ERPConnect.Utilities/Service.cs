@@ -224,11 +224,11 @@ namespace Siemens.Sap.ERPConnect.Utilities
                     {
                         if (j < table.Columns.Count - 1)
                         {
-                            JSONString.Append("\"" + table.Columns[j].ColumnName.ToString() + "\":" + "\"" + GetFieldInfo(table.Columns[j].ColumnName.ToUpper(),table.Rows[i][j].ToString()) + "\",");
+                            JSONString.Append("\"" + table.Columns[j].ColumnName.ToString() + "\":" + "\"" + GetFieldInfo(table.Columns[j].ColumnName.ToUpper(), table.Rows[i][j].ToString(), table.Columns[j].DataType) + "\",");
                         }
                         else if (j == table.Columns.Count - 1)
                         {
-                            JSONString.Append("\"" + table.Columns[j].ColumnName.ToString() + "\":" + "\"" + GetFieldInfo(table.Columns[j].ColumnName.ToUpper(), table.Rows[i][j].ToString()) + "\"");
+                            JSONString.Append("\"" + table.Columns[j].ColumnName.ToString() + "\":" + "\"" + GetFieldInfo(table.Columns[j].ColumnName.ToUpper(), table.Rows[i][j].ToString(), table.Columns[j].DataType) + "\"");
                         }
                     }
                     if (i == table.Rows.Count - 1)
@@ -245,10 +245,10 @@ namespace Siemens.Sap.ERPConnect.Utilities
             return JSONString.ToString();
         }
 
-        private string GetFieldInfo(string columnName, string? columnData)
+        private string GetFieldInfo(string columnName, string? columnData, Type t)
         {
             DateTime tempDate = new DateTime();
-           if (columnName.Contains("DATE") && columnData.Length==8)
+           if (t is DateTime || (columnName.Contains("DATE") && columnData.Length==8))
            {
                 CultureInfo provider = CultureInfo.InvariantCulture;
                 if (columnData == null || columnData == "00000000")
