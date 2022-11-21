@@ -366,3 +366,7 @@ BuildProgressionVisualisation/log.txt
 *.dll
 
 *.cache
+
+*.v2
+
+*.testlog

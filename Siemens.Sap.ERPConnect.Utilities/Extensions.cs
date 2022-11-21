@@ -401,6 +401,10 @@ namespace Siemens.Sap.ERPConnect.Utilities
             return ds;
         }
 
+
+
+
+
         internal static Recordset[] ToAdodbRecordsetArray(this RFCFunction function)
         {
 

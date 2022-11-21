@@ -6,6 +6,7 @@ using System.Text;
 using ERPConnect;
 using Siemens.Sap.ERPConnect.Utilities.Interfaces;
 using ERPConnect.Utils;
+using System.Globalization;
 
 namespace Siemens.Sap.ERPConnect.Utilities
 {
@@ -681,9 +682,20 @@ namespace Siemens.Sap.ERPConnect.Utilities
                 case "System.Decimal":
                     return Convert.ToDecimal(value.ToString());
                 case "System.DateTime":
-                    return string.Format("yyyyMMdd", value);
-                 default:
+                    DateTime tempDate = new DateTime();
+                    CultureInfo provider = CultureInfo.InvariantCulture;
+             
+                    if (value == null || value.ToString() == "00000000")
+                    {
+                        tempDate = DateTime.MinValue.Date;
+                    }
+                    else
+                    {
+                        tempDate = DateTime.ParseExact(value.ToString(), "yyyyMMdd", provider);
+                    }
 
+                    return tempDate;
+                 default:
                    return  value.ToString();
 
 

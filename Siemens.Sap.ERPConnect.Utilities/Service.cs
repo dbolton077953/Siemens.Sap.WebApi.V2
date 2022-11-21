@@ -217,6 +217,7 @@ namespace Siemens.Sap.ERPConnect.Utilities
             if (table.Rows.Count > 0)
             {
                 JSONString.Append("[");
+             
                 for (int i = 0; i < table.Rows.Count; i++)
                 {
                     JSONString.Append("{");
@@ -231,7 +232,7 @@ namespace Siemens.Sap.ERPConnect.Utilities
                             JSONString.Append("\"" + table.Columns[j].ColumnName.ToString() + "\":" + "\"" + GetFieldInfo(table.Columns[j].ColumnName.ToUpper(), table.Rows[i][j].ToString(), table.Columns[j].DataType) + "\"");
                         }
                     }
-                    if (i == table.Rows.Count - 1)
+                    if (i == table.Rows.Count - 1 || table.Rows.Count==1)
                     {
                         JSONString.Append("}");
                     }
@@ -240,7 +241,9 @@ namespace Siemens.Sap.ERPConnect.Utilities
                         JSONString.Append("},");
                     }
                 }
+
                 JSONString.Append("]");
+
             }
             return JSONString.ToString();
         }
@@ -248,7 +251,7 @@ namespace Siemens.Sap.ERPConnect.Utilities
         private string GetFieldInfo(string columnName, string? columnData, Type t)
         {
             DateTime tempDate = new DateTime();
-           if (t is DateTime || (columnName.Contains("DATE") && columnData.Length==8))
+           if (t.FullName=="System.DateTime" || (columnName.Contains("DATE") && columnData.Length==8))
            {
                 CultureInfo provider = CultureInfo.InvariantCulture;
                 if (columnData == null || columnData == "00000000")
@@ -260,7 +263,7 @@ namespace Siemens.Sap.ERPConnect.Utilities
                 {
                     try
                     {
-                        tempDate = DateTime.ParseExact(columnData, "yyyyMMdd", provider);
+                        tempDate = DateTime.ParseExact(columnData, "dd/MM/yyyy hh:mm:ss", provider);
                     }
                     catch (Exception )
                     {
