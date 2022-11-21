@@ -360,6 +360,7 @@ MigrationBackup/
 FodyWeavers.xsd
 
 *.project.assets.json
+project.assets.json
 
 Siemens.BuildProgressionVisualisation.Common/Models/AppSettings.cs~Moved this from my archive to my downloaded version as was missing some.
 
