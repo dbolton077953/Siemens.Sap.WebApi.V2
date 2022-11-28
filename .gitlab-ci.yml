@@ -22,10 +22,10 @@
 #
 variables:
 # *** EDITABLE FIELDS BELOW. *** 
-  SOLUTION: '' # Full Solution file name (basd on root of repo) including the .sln extension
-  STARTUP_PROJECT_FOLDER: '' # location of your startup project
+  SOLUTION: 'Siemens.Sap.WebAPI.sln' # Full Solution file name (basd on root of repo) including the .sln extension
+  STARTUP_PROJECT_FOLDER: 'Siemens.SAP.Web.API' # location of your startup project
   SECONDARY_PROJECT_FOLDER: '' # location of any secondary project (like a Web API project)
-  VERSION_DLL: '' # This is the name of a DLL in the project folder that will determine the version of the whole app (File Version)
+  VERSION_DLL: 'Siemens.Sap.WebAPI.dll' # This is the name of a DLL in the project folder that will determine the version of the whole app (File Version)
   BUILD_SUB_FOLDER: 'net6.0' # set to netcoreapp3.1 or net6.0
   PRODUCTION_CONFIGURATION: 'Release' # Change to PLATFORM\Release for .net 5 and 6 (where PLATFORM is copied and pasted from value below)
   STAGING_CONFIGURATION: 'Staging' # Change to PLATFORM\Staging for .net 5 and 6 (where PLATFORM is copied and pasted from value below)
@@ -157,10 +157,6 @@ deploy_stage_job:
     - '& "$env:PARSE_WEB_CONFIG_APP" "${env:STARTUP_PROJECT_FOLDER}\bin\$env:STAGING_CONFIGURATION\$env:BUILD_SUB_FOLDER\publish\web.config" "$env:STAGING_PUBLISH_PROFILE_NAME" "$env:VERSION_DLL"'
     # Comment out the line above if .net 5 or 6
     - '& "$env:DEPLOY_PACKAGED_APP_BATCH_FILE" "$env:STARTUP_PROJECT_FOLDER\bin\$env:STAGING_CONFIGURATION\$env:BUILD_SUB_FOLDER\$env:VERSION_DLL" "$env:STAGING_DEPLOY_ROOT\$env:STARTUP_PROJECT_FOLDER" "$env:STARTUP_PROJECT_FOLDER\bin\$env:STAGING_CONFIGURATION\$env:BUILD_SUB_FOLDER\publish\*"' # Copy contents of publish folder
-# *** Comment out the line below if only deploying one project, or add to it (and the variables) if more than two ***
-    - '& "$env:DOTNET_PATH" publish "${env:SECONDARY_PROJECT_FOLDER}\${env:SECONDARY_PROJECT_FOLDER}.csproj" -c "${env:STAGING_CONFIGURATION}" -p:PublishProfile="${env:SECONDARY_PROJECT_FOLDER}\Properties\PublishProfiles\${env:STAGING_PUBLISH_PROFILE_NAME}.pubxml"'
-    - '& "$env:DEPLOY_PACKAGED_APP_BATCH_FILE" "$env:STARTUP_PROJECT_FOLDER\bin\$env:STAGING_CONFIGURATION\$env:BUILD_SUB_FOLDER\$env:VERSION_DLL" "$env:STAGING_DEPLOY_ROOT\$env:SECONDARY_PROJECT_FOLDER" "$env:SECONDARY_PROJECT_FOLDER\bin\$env:STAGING_CONFIGURATION\$env:BUILD_SUB_FOLDER\publish\*"' # Copy contents of publish folder
-# *** Comment out the line above if only deploying one project, or add to it (and the variables) if more than two ***
   dependencies:
     - staging_build_job
   only:
@@ -174,10 +170,6 @@ deploy_live_job:
     - '& "$env:PARSE_WEB_CONFIG_APP" "${env:STARTUP_PROJECT_FOLDER}\bin\$env:PRODUCTION_PUBLISH_PROFILE_NAME\$env:BUILD_SUB_FOLDER\publish\web.config" "$env:PRODUCTION_PUBLISH_PROFILE_NAME" "$env:VERSION_DLL"'
     # Comment out the line above if .net 5 or 6
     - '& "$env:DEPLOY_PACKAGED_APP_BATCH_FILE" "$env:STARTUP_PROJECT_FOLDER\bin\$env:PRODUCTION_CONFIGURATION\$env:BUILD_SUB_FOLDER\$env:VERSION_DLL" "$env:PRODUCTION_DEPLOY_ROOT\$env:STARTUP_PROJECT_FOLDER" "$env:STARTUP_PROJECT_FOLDER\bin\$env:PRODUCTION_CONFIGURATION\$env:BUILD_SUB_FOLDER\publish\*"' # Copy contents of publish folder
-# *** Comment out the line below if only deploying one project, or add to it (and the variables) if more than two ***
-    - '& "$env:DOTNET_PATH" publish "${env:SECONDARY_PROJECT_FOLDER}\${env:SECONDARY_PROJECT_FOLDER}.csproj" -c "${env:PRODUCTION_CONFIGURATION}" -p:PublishProfile="${env:SECONDARY_PROJECT_FOLDER}\Properties\PublishProfiles\${env:PRODUCTION_PUBLISH_PROFILE_NAME}.pubxml"'
-    - '& "$env:DEPLOY_PACKAGED_APP_BATCH_FILE" "$env:STARTUP_PROJECT_FOLDER\bin\$env:PRODUCTION_CONFIGURATION\$env:BUILD_SUB_FOLDER\$env:VERSION_DLL" "$env:PRODUCTION_DEPLOY_ROOT\$env:SECONDARY_PROJECT_FOLDER" "$env:SECONDARY_PROJECT_FOLDER\bin\$env:PRODUCTION_CONFIGURATION\$env:BUILD_SUB_FOLDER\publish\*"' # Copy contents of publish folder
-# *** Comment out the line above if only deploying one project, or add to it (and the variables) if more than two ***
   dependencies:
     - production_build_job
   only:
