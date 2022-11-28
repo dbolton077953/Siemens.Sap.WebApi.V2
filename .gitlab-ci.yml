@@ -23,7 +23,7 @@
 variables:
 # *** EDITABLE FIELDS BELOW. *** 
   SOLUTION: 'Siemens.Sap.WebAPI.sln' # Full Solution file name (basd on root of repo) including the .sln extension
-  STARTUP_PROJECT_FOLDER: 'Siemens.SAP.Web.API' # location of your startup project
+  STARTUP_PROJECT_FOLDER: 'Siemens.SAP.WebAPI' # location of your startup project
   SECONDARY_PROJECT_FOLDER: '' # location of any secondary project (like a Web API project)
   VERSION_DLL: 'Siemens.Sap.WebAPI.dll' # This is the name of a DLL in the project folder that will determine the version of the whole app (File Version)
   BUILD_SUB_FOLDER: 'net6.0' # set to netcoreapp3.1 or net6.0
