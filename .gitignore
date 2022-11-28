@@ -370,3 +370,5 @@ BuildProgressionVisualisation/log.txt
 *.v2
 
 *.testlog
+
+*.editorconfig
