@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32630.192
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Siemens.Sap.WebAPI", "Siemens.SAP.Web.API\Siemens.Sap.WebAPI.csproj", "{CEC0A328-473F-4D3E-B617-0C865919EC79}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Siemens.Sap.WebAPI", "Siemens.SAP.WebAPI\Siemens.Sap.WebAPI.csproj", "{CEC0A328-473F-4D3E-B617-0C865919EC79}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Siemens.Sap.WebAPI.Common", "Siemens.Sap.WebAPI.Common\Siemens.Sap.WebAPI.Common.csproj", "{ACD0B297-3D6C-46C0-A19F-39F1B477EF89}"
 EndProject
