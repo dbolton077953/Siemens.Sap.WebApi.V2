@@ -19,13 +19,11 @@
     <ProjectReference Include="..\Siemens.Sap.WebAPI.Common\Siemens.Sap.WebAPI.Common.csproj" />
   </ItemGroup>
 
-
-
-    <ItemGroup>
-		<Reference Include="ERPConnectStandard20">
-			<HintPath>Theobald\ERPConnectStandard20.dll</HintPath>
-		</Reference>
-	</ItemGroup>
+  <ItemGroup>
+    <Reference Include="ERPConnectStandard20">
+      <HintPath>..\Siemens.Sap.ERPConnect.Utilities\Theobald\ERPConnectStandard20.dll</HintPath>
+    </Reference>
+  </ItemGroup>
 
 
 
