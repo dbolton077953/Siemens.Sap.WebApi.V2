@@ -26,7 +26,7 @@ variables:
   STARTUP_PROJECT_FOLDER: '' # location of your startup project
   SECONDARY_PROJECT_FOLDER: '' # location of any secondary project (like a Web API project)
   VERSION_DLL: '' # This is the name of a DLL in the project folder that will determine the version of the whole app (File Version)
-  BUILD_SUB_FOLDER: 'netcoreapp3.1' # set to netcoreapp3.1 or net6.0
+  BUILD_SUB_FOLDER: 'net6.0' # set to netcoreapp3.1 or net6.0
   PRODUCTION_CONFIGURATION: 'Release' # Change to PLATFORM\Release for .net 5 and 6 (where PLATFORM is copied and pasted from value below)
   STAGING_CONFIGURATION: 'Staging' # Change to PLATFORM\Staging for .net 5 and 6 (where PLATFORM is copied and pasted from value below)
   PLATFORM: 'Any CPU' # If targeting a specific platfrom, change it here
