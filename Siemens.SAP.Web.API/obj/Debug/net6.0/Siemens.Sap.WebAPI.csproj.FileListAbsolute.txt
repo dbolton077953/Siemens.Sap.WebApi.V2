@@ -5,15 +5,12 @@ D:\Projects\Git\siemens-sap-web-api\Siemens.SAP.Web.API\bin\Debug\net6.0\Siemens
 D:\Projects\Git\siemens-sap-web-api\Siemens.SAP.Web.API\bin\Debug\net6.0\Siemens.Sap.WebAPI.runtimeconfig.json
 D:\Projects\Git\siemens-sap-web-api\Siemens.SAP.Web.API\bin\Debug\net6.0\Siemens.Sap.WebAPI.dll
 D:\Projects\Git\siemens-sap-web-api\Siemens.SAP.Web.API\bin\Debug\net6.0\Siemens.Sap.WebAPI.pdb
-D:\Projects\Git\siemens-sap-web-api\Siemens.SAP.Web.API\bin\Debug\net6.0\System.Net.Http.Formatting.dll
-D:\Projects\Git\siemens-sap-web-api\Siemens.SAP.Web.API\bin\Debug\net6.0\System.Web.Http.dll
 D:\Projects\Git\siemens-sap-web-api\Siemens.SAP.Web.API\bin\Debug\net6.0\Microsoft.DotNet.PlatformAbstractions.dll
 D:\Projects\Git\siemens-sap-web-api\Siemens.SAP.Web.API\bin\Debug\net6.0\Microsoft.Extensions.Configuration.dll
 D:\Projects\Git\siemens-sap-web-api\Siemens.SAP.Web.API\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
 D:\Projects\Git\siemens-sap-web-api\Siemens.SAP.Web.API\bin\Debug\net6.0\Microsoft.OpenApi.dll
 D:\Projects\Git\siemens-sap-web-api\Siemens.SAP.Web.API\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
 D:\Projects\Git\siemens-sap-web-api\Siemens.SAP.Web.API\bin\Debug\net6.0\Newtonsoft.Json.dll
-D:\Projects\Git\siemens-sap-web-api\Siemens.SAP.Web.API\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll
 D:\Projects\Git\siemens-sap-web-api\Siemens.SAP.Web.API\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
 D:\Projects\Git\siemens-sap-web-api\Siemens.SAP.Web.API\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 D:\Projects\Git\siemens-sap-web-api\Siemens.SAP.Web.API\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
@@ -49,3 +46,9 @@ D:\Projects\Git\siemens-sap-web-api\Siemens.SAP.Web.API\obj\Debug\net6.0\refint\
 D:\Projects\Git\siemens-sap-web-api\Siemens.SAP.Web.API\obj\Debug\net6.0\Siemens.Sap.WebAPI.pdb
 D:\Projects\Git\siemens-sap-web-api\Siemens.SAP.Web.API\obj\Debug\net6.0\Siemens.Sap.WebAPI.genruntimeconfig.cache
 D:\Projects\Git\siemens-sap-web-api\Siemens.SAP.Web.API\obj\Debug\net6.0\ref\Siemens.Sap.WebAPI.dll
+D:\Projects\Git\siemens-sap-web-api\Siemens.SAP.Web.API\bin\Debug\net6.0\appsettings.Staging.json
+D:\Projects\Git\siemens-sap-web-api\Siemens.SAP.Web.API\obj\Debug\net6.0\staticwebassets\msbuild.Siemens.Sap.WebAPI.Microsoft.AspNetCore.StaticWebAssets.props
+D:\Projects\Git\siemens-sap-web-api\Siemens.SAP.Web.API\obj\Debug\net6.0\staticwebassets\msbuild.build.Siemens.Sap.WebAPI.props
+D:\Projects\Git\siemens-sap-web-api\Siemens.SAP.Web.API\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.Siemens.Sap.WebAPI.props
+D:\Projects\Git\siemens-sap-web-api\Siemens.SAP.Web.API\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.Siemens.Sap.WebAPI.props
+D:\Projects\Git\siemens-sap-web-api\Siemens.SAP.Web.API\obj\Debug\net6.0\staticwebassets.pack.json

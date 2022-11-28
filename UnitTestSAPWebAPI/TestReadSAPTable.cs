@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 
 namespace UnitTestSAPWebAPI
 {
+    /*
     internal class TestReadSAPTable: UnitTestBase
     {
         protected string _webAPIEndPoint = "https://localhost:7145/api/v1/Rfc/ReadFromSAPTable";
@@ -57,4 +58,5 @@ namespace UnitTestSAPWebAPI
 
 
     }
+    */
 }

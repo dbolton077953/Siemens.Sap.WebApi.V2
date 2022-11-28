@@ -1,0 +1,179 @@
+# This file is a template, and will need editing before it works on your project.
+# The following script will work for any project that can be built from command line by msbuild
+# It uses powershell shell executor, so you need to add the following line to your config.toml file
+# (located in gitlab-runner.exe directory):
+#   shell = "powershell"
+#
+# This script is composed of 4 stages: build, test, package, deploy.
+#
+# The build stage restores NuGet packages and uses msbuild to build the exe and msi
+# One major issue you'll find is that you can't build msi projects from command line
+# if you use vdproj.  There are workarounds building msi via devenv, but they rarely work
+# The best solution is migrating your vdproj projects to WiX, as it can be build directly
+# by msbuild.
+#
+# The test stage runs nunit from command line against all test projects inside your solution
+#
+# The package stage reacquires dependencies and issues a pack command, which will create any NuGet packages specified
+# in the solution's projects. It then runs a powershell script, via a batch file, with arguments to copy all those 
+# packages to the package folder specified in $env:PACKAGE_FOLDER
+#
+# The deploy stage copies a published website to a location specified in 
+#
+variables:
+# *** EDITABLE FIELDS BELOW. *** 
+  SOLUTION: 'Siemens.Sap.WebAPI.sln' # Full Solution file name (basd on root of repo) including the .sln extension
+  STARTUP_PROJECT_FOLDER: 'Siemens.SAP.Web.API' # location of your startup project
+  SECONDARY_PROJECT_FOLDER: '' # location of any secondary project (like a Web API project)
+  VERSION_DLL: 'Siemens.Sap.WebAPI.dll' # This is the name of a DLL in the project folder that will determine the version of the whole app (File Version)
+  BUILD_SUB_FOLDER: 'net6.0' # set to netcoreapp3.1 or net6.0
+  PRODUCTION_CONFIGURATION: 'Release' # Change to PLATFORM\Release for .net 5 and 6 (where PLATFORM is copied and pasted from value below)
+  STAGING_CONFIGURATION: 'Staging' # Change to PLATFORM\Staging for .net 5 and 6 (where PLATFORM is copied and pasted from value below)
+  PLATFORM: 'Any CPU' # If targeting a specific platfrom, change it here
+  # *** EDITABLE FIELDS ABOVE ***
+  DEPLOY_NUGET_PACKAGES_BATCH_FILE: 'D:\GitLab-Utilities\copyItemsRecursively.bat'
+  DEPLOY_PACKAGED_APP_BATCH_FILE: 'D:\GitLab-Utilities\deployPublishedCodeToVersionedFolderIfNotExists.bat'
+  PARSE_WEB_CONFIG_APP: 'D:\\GitLab-Utilities\\ParseWebConfig\\TransformConfig.exe'
+  STAGING_DEPLOY_ROOT: '\\GBCONV1A084SRV\Web\' # This seems like a sensible location, but you may want to point somewhere else
+  PRODUCTION_DEPLOY_ROOT: '\\GBCONV1A083SRV\Web\' # This seems like a sensible location, but you may want to point somewhere else
+  PACKAGE_FOLDER: 'D:\Builds\SoftwareDevelopment\Packages\'
+  PACKAGE_FILTER: '*.nupkg'
+  OBJECTS_FOLDER: '.\*\obj'
+  NUGET_PATH: 'C:\Program Files\NuGet\5.5.1\nuget.exe'
+  NUNIT_PATH: 'C:\Program Files (x86)\NUnit.org\3.11.1\nunit-console\nunit3-console.exe'
+  DOTNET_PATH: 'C:\Program Files\dotnet\dotnet.exe'
+  PRODUCTION_PUBLISH_PROFILE_NAME: 'Production' # Name of the startup publish profile saved and committed to GIT (for web sites/apis) (used in deploy_job)
+  STAGING_PUBLISH_PROFILE_NAME: 'Staging' # Name of the startup publish profile saved and committed to GIT (for web sites/apis) (used in deploy_job)
+  GIT_SUBMODULE_STRATEGY: recursive
+
+# Now go to the deploy stages and remove lines as indicated in the comments if necessary
+
+# I don't know for certain what this does BUT if I now remove it, it stops being able to package so I'll leave as is
+cache:
+ key: '$CI_JOB_STAGE-$CI_COMMIT_REF_SLUG'
+ paths:
+  - '$OBJECTS_FOLDER/project.assets.json'
+  - '$OBJECTS_FOLDER/*.csproj.nuget.*'
+  - '$PACKAGE_FOLDER'
+
+
+# Leave the following until we can get docker working
+default:
+    tags:
+       - windows
+       - windows-shared
+        
+        
+# *** REMOVE OR ADD STAGES TO THE ONES BELOW DEPENDING ON SOLUTION ***
+stages: 
+  - stage_build
+  - production_build
+  - stage_test
+  - production_test
+  - package
+  - deploy_stage
+  - deploy_live
+# *** REMOVE OR ADD STAGES TO THE ONES ABOVE DEPENDING ON SOLUTION ***
+ 
+ 
+# Should work with any modern project file (the ones with only a few lines of content)
+# There is the option of overwriting the variables on the website when you manually trigger a builld
+staging_build_job:
+  stage: stage_build
+  script:
+    - '& "$env:NUGET_PATH" restore "$env:SOLUTION"'  # restore Nuget dependencies
+    - '& "$env:DOTNET_PATH" build -c "$env:STAGING_CONFIGURATION"'  # build the project
+  artifacts:
+    expire_in: 1 days
+    paths:
+      - '.\*\bin\$env:STAGING_CONFIGURATION\$env:BUILD_SUB_FOLDER'
+  only:
+    - branches
+  except:
+    - master
+
+# Should work with any modern project file (the ones with only a few lines of content)
+# There is the option of overwriting the variables on the website when you manually trigger a builld
+production_build_job:
+  stage: production_build
+  script:
+    - '& "$env:NUGET_PATH" restore "$env:SOLUTION"'  # restore Nuget dependencies
+    - '& "$env:DOTNET_PATH" build -c "$env:PRODUCTION_CONFIGURATION"'  # build the project
+  artifacts:
+    expire_in: 1 days
+    paths:
+      - '.\*\bin\$env:PRODUCTION_CONFIGURATION\$env:BUILD_SUB_FOLDER'
+  only:
+    - master
+
+# This should work on any test project in your solution It finds the solution file automatically somehow
+# *** If you have no tests, comment out everything below ***
+staging_test_job:
+  stage: stage_test
+  only:
+    - branches
+  except:
+    - master
+  script:
+    - '& "$env:DOTNET_PATH" test'
+  dependencies:
+    - staging_build_job
+# *** If you have no tests, comment out everything above ***
+
+# This should work on any test project in your solution It finds the solution file automatically somehow
+# *** If you have no tests, comment out everything below ***
+production_test_job:
+  stage: production_test
+  only:
+    - master
+  script:
+    - '& "$env:DOTNET_PATH" test'
+  dependencies:
+    - production_build_job
+# *** If you have no tests, comment out everything above ***
+
+
+# All being well, this should work a treat and stick the nuget packages in the bin/Release folders.
+# The wild card format of $env:PACKAGE_FILTER finds all the ones throughout the solution
+# The powershell script called from env:DEPLOY_NUGET_PACKAGES_BATCH_FILE never overwrites an existing file
+# *** If you have no packages, comment out everything below ***
+package_job:
+  stage: package
+  script:
+    - '& "$env:DOTNET_PATH" pack -c "$env:STAGING_CONFIGURATION"'
+    - '& "$env:DEPLOY_NUGET_PACKAGES_BATCH_FILE" "$env:PACKAGE_FILTER" "$env:PACKAGE_FOLDER"' # Copy new NuGet packages to $env:PACKAGE_FOLDER
+  dependencies:
+    - staging_build_job
+  only:
+      - release/Staging
+# *** If you have no packages, comment out everything above ***
+
+# *** If you are not deploying (typically websites), comment out everything below ***
+deploy_stage_job:
+  stage: deploy_stage
+  script:
+    - '& "$env:DOTNET_PATH" publish "${env:STARTUP_PROJECT_FOLDER}\${env:STARTUP_PROJECT_FOLDER}.csproj" -c "${env:STAGING_CONFIGURATION}" -p:PublishProfile="${env:STARTUP_PROJECT_FOLDER}\Properties\PublishProfiles\${env:STAGING_PUBLISH_PROFILE_NAME}.pubxml"'
+    # Comment out the line below if .net 5 or 6
+    - '& "$env:PARSE_WEB_CONFIG_APP" "${env:STARTUP_PROJECT_FOLDER}\bin\$env:STAGING_CONFIGURATION\$env:BUILD_SUB_FOLDER\publish\web.config" "$env:STAGING_PUBLISH_PROFILE_NAME" "$env:VERSION_DLL"'
+    # Comment out the line above if .net 5 or 6
+    - '& "$env:DEPLOY_PACKAGED_APP_BATCH_FILE" "$env:STARTUP_PROJECT_FOLDER\bin\$env:STAGING_CONFIGURATION\$env:BUILD_SUB_FOLDER\$env:VERSION_DLL" "$env:STAGING_DEPLOY_ROOT\$env:STARTUP_PROJECT_FOLDER" "$env:STARTUP_PROJECT_FOLDER\bin\$env:STAGING_CONFIGURATION\$env:BUILD_SUB_FOLDER\publish\*"' # Copy contents of publish folder
+  dependencies:
+    - staging_build_job
+  only:
+      - release/Staging
+
+deploy_live_job:
+  stage: deploy_live
+  script:
+    - '& "$env:DOTNET_PATH" publish "${env:STARTUP_PROJECT_FOLDER}\${env:STARTUP_PROJECT_FOLDER}.csproj" -c "${env:PRODUCTION_CONFIGURATION}" -p:PublishProfile="${env:STARTUP_PROJECT_FOLDER}\Properties\PublishProfiles\${env:PRODUCTION_PUBLISH_PROFILE_NAME}.pubxml"'
+    # Comment out the line below if .net 5 or 6
+    - '& "$env:PARSE_WEB_CONFIG_APP" "${env:STARTUP_PROJECT_FOLDER}\bin\$env:PRODUCTION_PUBLISH_PROFILE_NAME\$env:BUILD_SUB_FOLDER\publish\web.config" "$env:PRODUCTION_PUBLISH_PROFILE_NAME" "$env:VERSION_DLL"'
+    # Comment out the line above if .net 5 or 6
+    - '& "$env:DEPLOY_PACKAGED_APP_BATCH_FILE" "$env:STARTUP_PROJECT_FOLDER\bin\$env:PRODUCTION_CONFIGURATION\$env:BUILD_SUB_FOLDER\$env:VERSION_DLL" "$env:PRODUCTION_DEPLOY_ROOT\$env:STARTUP_PROJECT_FOLDER" "$env:STARTUP_PROJECT_FOLDER\bin\$env:PRODUCTION_CONFIGURATION\$env:BUILD_SUB_FOLDER\publish\*"' # Copy contents of publish folder
+  dependencies:
+    - production_build_job
+  only:
+      - master
+
+# *** If you are not deploying (typically websites), comment out everything above ***
+
