@@ -3,9 +3,11 @@ using StrongInterop.ADODB;
 using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Globalization;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Reflection;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
@@ -27,9 +29,10 @@ namespace Siemens.Sap.ERPConnect.Utilities
                     return typeof(int);
                 case RFCTYPE.FLOAT:
                     return typeof(double);
+                case RFCTYPE.DATE:
+                    return typeof(DateTime);
                 case RFCTYPE.CHAR:
                 case RFCTYPE.STRING:
-                case RFCTYPE.DATE:
                 default:
                     return typeof(string);
             }
@@ -281,11 +284,80 @@ namespace Siemens.Sap.ERPConnect.Utilities
             foreach (RFCTable t in function.Tables)
             {
 
-                ds.Tables.Add(t.ToADOTable());
+                //ds.Tables.Add(t.ToADOTable());
+                ds.Tables.Add(t.ToTypedDataTable());
             }
 
 
             return ds;
+        }
+
+
+
+        internal static DataTable ToTypedDataTable(this RFCTable rfcTable)
+        {
+            DataTable dt = new DataTable(rfcTable.Name);
+            foreach (RFCTableColumn col in rfcTable.Columns)
+            {
+                dt.Columns.Add(new DataColumn(col.Name, DotNetType(col.Type)));
+            }
+
+            for (int i = 0; i < rfcTable.RowCount; i++)
+            {
+                DataRow row = dt.Rows.Add();
+                SetDataTableRowFields(row, rfcTable.Rows[i]);
+            }
+
+            return dt;
+        }
+
+        private static void SetDataTableRowFields(DataRow row, RFCStructure rFCStructure)
+        {
+
+            DateTime tempDate = new DateTime();
+            string columnData;
+
+            foreach (RFCTableColumn col in rFCStructure.Columns)
+            {
+                switch (col.Type)
+                {
+                    case RFCTYPE.DATE:
+                        CultureInfo provider = CultureInfo.InvariantCulture;
+                        columnData = rFCStructure[col.Name].ToString();
+                        if (columnData == null || columnData == "00000000")
+                        {
+                            tempDate = DateTime.MinValue.Date;
+
+                        }
+                        else
+                        {
+                            tempDate = DateTime.ParseExact(columnData, "yyyyMMdd", provider);
+                        }
+
+                        row[col.Name] = tempDate;
+                        break;
+                    case RFCTYPE.INT:
+                    case RFCTYPE.INT8:
+                    case RFCTYPE.INT2:
+                        row[col.Name] = Convert.ToInt32(rFCStructure[col.Name]);
+                        break;
+                    case RFCTYPE.BCD:
+                        row[col.Name] = Convert.ToDecimal(rFCStructure[col.Name]);
+                        break;
+                    case RFCTYPE.BYTE:
+                        row[col.Name] = Convert.ToByte(rFCStructure[col.Name]);
+                        break;
+                    case RFCTYPE.FLOAT:
+                        row[col.Name] = Convert.ToDouble(rFCStructure[col.Name]);
+                        break;
+             
+
+                    default:
+                        row[col.Name] = rFCStructure[col.Name];
+                        break;
+                }
+                
+            }
         }
 
         internal static DataSet ToDotNetDataSet(this RFCFunction function, string[] columnNames, string delimiter)
@@ -328,6 +400,10 @@ namespace Siemens.Sap.ERPConnect.Utilities
             }
             return ds;
         }
+
+
+
+
 
         internal static Recordset[] ToAdodbRecordsetArray(this RFCFunction function)
         {

@@ -4,6 +4,7 @@ using System.Data;
 using Microsoft.Extensions.Configuration;
 using Siemens.Sap.ERPConnect.Utilities.Interfaces;
 using System.Drawing;
+using System.Globalization;
 
 namespace Siemens.Sap.ERPConnect.Utilities
 {
@@ -216,6 +217,7 @@ namespace Siemens.Sap.ERPConnect.Utilities
             if (table.Rows.Count > 0)
             {
                 JSONString.Append("[");
+             
                 for (int i = 0; i < table.Rows.Count; i++)
                 {
                     JSONString.Append("{");
@@ -223,14 +225,14 @@ namespace Siemens.Sap.ERPConnect.Utilities
                     {
                         if (j < table.Columns.Count - 1)
                         {
-                            JSONString.Append("\"" + table.Columns[j].ColumnName.ToString() + "\":" + "\"" + table.Rows[i][j].ToString() + "\",");
+                            JSONString.Append("\"" + table.Columns[j].ColumnName.ToString() + "\":" + "\"" + GetFieldInfo(table.Columns[j].ColumnName.ToUpper(), table.Rows[i][j].ToString(), table.Columns[j].DataType) + "\",");
                         }
                         else if (j == table.Columns.Count - 1)
                         {
-                            JSONString.Append("\"" + table.Columns[j].ColumnName.ToString() + "\":" + "\"" + table.Rows[i][j].ToString() + "\"");
+                            JSONString.Append("\"" + table.Columns[j].ColumnName.ToString() + "\":" + "\"" + GetFieldInfo(table.Columns[j].ColumnName.ToUpper(), table.Rows[i][j].ToString(), table.Columns[j].DataType) + "\"");
                         }
                     }
-                    if (i == table.Rows.Count - 1)
+                    if (i == table.Rows.Count - 1 || table.Rows.Count==1)
                     {
                         JSONString.Append("}");
                     }
@@ -239,14 +241,47 @@ namespace Siemens.Sap.ERPConnect.Utilities
                         JSONString.Append("},");
                     }
                 }
+
                 JSONString.Append("]");
+
             }
             return JSONString.ToString();
         }
 
-            #region IDisposable Members
+        private string GetFieldInfo(string columnName, string? columnData, Type t)
+        {
+            DateTime tempDate = new DateTime();
+           if (t.FullName=="System.DateTime" || (columnName.Contains("DATE") && columnData.Length==8))
+           {
+                CultureInfo provider = CultureInfo.InvariantCulture;
+                if (columnData == null || columnData == "00000000")
+                {
+                    tempDate = DateTime.MinValue.Date;
+    
+                }
+                else
+                {
+                    try
+                    {
+                        tempDate = DateTime.ParseExact(columnData, "dd/MM/yyyy hh:mm:ss", provider);
+                    }
+                    catch (Exception )
+                    {
+                        return columnData;
+                    }
 
-            public void Dispose()
+                 }
+                return tempDate.ToString("yyyy.MM.dd");
+           }
+           else
+            {
+                return columnData;
+            }
+        }
+
+        #region IDisposable Members
+
+        public void Dispose()
         {
             Dispose(true);
             GC.SuppressFinalize(this);

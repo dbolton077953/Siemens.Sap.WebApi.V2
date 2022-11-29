@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Platforms>AnyCPU;x64</Platforms>
+    <Configurations>Debug;Release;Staging;Develope</Configurations>
+  </PropertyGroup>
+
+  <ItemGroup>
+	<PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.15.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="6.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Siemens.Sap.ERPConnect.Utilities\Siemens.Sap.ERPConnect.Utilities.csproj" />
+    <ProjectReference Include="..\Siemens.Sap.WebAPI.Common\Siemens.Sap.WebAPI.Common.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="ERPConnectStandard20">
+      <HintPath>..\Siemens.Sap.ERPConnect.Utilities\Theobald\ERPConnectStandard20.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+
+
+
+</Project>

@@ -371,16 +371,34 @@ BuildProgressionVisualisation/log.txt
 !Siemens.Sap.ERPConnect.Utilities\Interop_Libraries\StrongInterop.ADODB.dll
 *.cache
 
+*.v2
+
+*.testlog
+
 *.editorconfig
 
 Siemens.Sap.ERPConnect.Utilities/obj/Siemens.Sap.ERPConnect.Utilities.csproj.nuget.dgspec.json
 
 Siemens.Sap.ERPConnect.Utilities/obj/Siemens.Sap.ERPConnect.Utilities.csproj.nuget.g.props
 
-Siemens.Sap.WebAPI.Common/obj/Debug/net6.0/Siemens.Sap.WebAPI.Common.csproj.FileListAbsolute.txt
-
 Siemens.Sap.WebAPI.Common/obj/Siemens.Sap.WebAPI.Common.csproj.nuget.dgspec.json
 
 Siemens.Sap.WebAPI.Common/obj/Siemens.Sap.WebAPI.Common.csproj.nuget.g.props
 
-Siemens.Sap.ERPConnect.Utilities/obj/Debug/net6.0/Siemens.Sap.ERPConnect.Utilities.csproj.FileListAbsolute.txt
+TestOrderImport/bin/Debug/net6.0-windows/TestOrderImport.exe
+
+TestOrderImport/obj/Debug/net6.0-windows/apphost.exe
+
+TestOrderImport/obj/Debug/net6.0-windows/TestOrderImport.csproj.FileListAbsolute.txt
+
+TestOrderImport/obj/TestOrderImport.csproj.nuget.dgspec.json
+
+TestOrderImport/obj/TestOrderImport.csproj.nuget.g.props
+
+UnitTestSAPWebAPI/bin/Debug/net6.0/CoverletSourceRootsMapping
+
+UnitTestSAPWebAPI/obj/Debug/net6.0/UnitTestSAPWebAPI.csproj.FileListAbsolute.txt
+
+UnitTestSAPWebAPI/obj/UnitTestSAPWebAPI.csproj.nuget.dgspec.json
+
+UnitTestSAPWebAPI/obj/UnitTestSAPWebAPI.csproj.nuget.g.props
