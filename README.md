@@ -71,6 +71,7 @@ For an example of how tro import an order check out the provided .Net Core win f
 
 # Support
 To obtain ERPCOnnect support contact Theobald software via email support@theobald-software.com.
+Or refer to https://siemens.sharepoint.com/:w:/r/teams/DevBi/_layouts/15/Doc.aspx?sourcedoc=%7B2857C8D8-EB89-43C9-A6E8-F2382566E19A%7D&file=Operations_Manual_v1.0.docx&action=default&mobileredirect=true
 
 ## Roadmap
 If you have ideas for releases in the future, it is a good idea to list them in the README.
