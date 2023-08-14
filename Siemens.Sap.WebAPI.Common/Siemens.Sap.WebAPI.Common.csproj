@@ -10,10 +10,7 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.5" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\Siemens.Sap.ERPConnect.Utilities\Siemens.Sap.ERPConnect.Utilities.csproj" />
+    <PackageReference Include="Siemens.Sap.ERPConnect.Utilities" Version="1.0.1" />
   </ItemGroup>
 
 </Project>

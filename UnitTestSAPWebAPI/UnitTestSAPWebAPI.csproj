@@ -23,7 +23,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Siemens.Sap.ERPConnect.Utilities\Siemens.Sap.ERPConnect.Utilities.csproj" />
     <ProjectReference Include="..\Siemens.Sap.WebAPI.Common\Siemens.Sap.WebAPI.Common.csproj" />
   </ItemGroup>
 
