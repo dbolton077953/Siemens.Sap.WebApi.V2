@@ -377,6 +377,8 @@ BuildProgressionVisualisation/log.txt
 
 *.editorconfig
 
+*.trc
+
 Siemens.Sap.ERPConnect.Utilities/obj/Siemens.Sap.ERPConnect.Utilities.csproj.nuget.dgspec.json
 
 Siemens.Sap.ERPConnect.Utilities/obj/Siemens.Sap.ERPConnect.Utilities.csproj.nuget.g.props

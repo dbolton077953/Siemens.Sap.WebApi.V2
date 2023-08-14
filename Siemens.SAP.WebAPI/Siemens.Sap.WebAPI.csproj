@@ -9,10 +9,14 @@
   </PropertyGroup>
 
   <ItemGroup>
-	<PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.15.1" />
-	<PackageReference Include="Siemens.Sap.WebAPI.Common" Version="1.0.0" />
-    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
-    <PackageReference Include="System.Configuration.ConfigurationManager" Version="6.0.0" />
+	<PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.19.5" />
+	<PackageReference Include="Siemens.Sap.ERPConnect.Utilities" Version="1.0.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="7.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Siemens.Sap.WebAPI.Common\Siemens.Sap.WebAPI.Common.csproj" />
   </ItemGroup>
 
   <ItemGroup>
