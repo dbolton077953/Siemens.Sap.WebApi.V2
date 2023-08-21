@@ -11,8 +11,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestOrderImport", "TestOrde
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnitTestSAPWebAPI", "UnitTestSAPWebAPI\UnitTestSAPWebAPI.csproj", "{69E79F7E-D18D-4E0F-BF94-DFB68ED98CA3}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Siemens.Sap.ERPConnect.Utilities", "Siemens.Sap.ERPConnect.Utilities\Siemens.Sap.ERPConnect.Utilities.csproj", "{7A3242F1-623C-472A-93BF-49917A1F3D07}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -89,22 +87,6 @@ Global
 		{69E79F7E-D18D-4E0F-BF94-DFB68ED98CA3}.Staging|Any CPU.Build.0 = Staging|Any CPU
 		{69E79F7E-D18D-4E0F-BF94-DFB68ED98CA3}.Staging|x64.ActiveCfg = Staging|x64
 		{69E79F7E-D18D-4E0F-BF94-DFB68ED98CA3}.Staging|x64.Build.0 = Staging|x64
-		{7A3242F1-623C-472A-93BF-49917A1F3D07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7A3242F1-623C-472A-93BF-49917A1F3D07}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7A3242F1-623C-472A-93BF-49917A1F3D07}.Debug|x64.ActiveCfg = Debug|x64
-		{7A3242F1-623C-472A-93BF-49917A1F3D07}.Debug|x64.Build.0 = Debug|x64
-		{7A3242F1-623C-472A-93BF-49917A1F3D07}.Develope|Any CPU.ActiveCfg = Develope|Any CPU
-		{7A3242F1-623C-472A-93BF-49917A1F3D07}.Develope|Any CPU.Build.0 = Develope|Any CPU
-		{7A3242F1-623C-472A-93BF-49917A1F3D07}.Develope|x64.ActiveCfg = Develope|x64
-		{7A3242F1-623C-472A-93BF-49917A1F3D07}.Develope|x64.Build.0 = Develope|x64
-		{7A3242F1-623C-472A-93BF-49917A1F3D07}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7A3242F1-623C-472A-93BF-49917A1F3D07}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7A3242F1-623C-472A-93BF-49917A1F3D07}.Release|x64.ActiveCfg = Release|x64
-		{7A3242F1-623C-472A-93BF-49917A1F3D07}.Release|x64.Build.0 = Release|x64
-		{7A3242F1-623C-472A-93BF-49917A1F3D07}.Staging|Any CPU.ActiveCfg = Staging|Any CPU
-		{7A3242F1-623C-472A-93BF-49917A1F3D07}.Staging|Any CPU.Build.0 = Staging|Any CPU
-		{7A3242F1-623C-472A-93BF-49917A1F3D07}.Staging|x64.ActiveCfg = Staging|x64
-		{7A3242F1-623C-472A-93BF-49917A1F3D07}.Staging|x64.Build.0 = Staging|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
