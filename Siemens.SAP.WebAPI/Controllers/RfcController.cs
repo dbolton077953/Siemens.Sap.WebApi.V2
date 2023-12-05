@@ -78,18 +78,21 @@ namespace Siemens.Sap.WebAPI.Controllers
 
                         if (string.IsNullOrEmpty(tables))
                         {
-                            response.OutParams = sc.Out.ToArray();
-                            return NotFound(response);
+                            if (sc.Out.Count > 0)
+                            {
+                                response.OutParams = sc.Out.ToArray();
+                                return Ok(response);
+                            }
+                            else
+                            {
+                                return NotFound(response);
+                            }
                         }
                         else
                         {
-
                             response.Tables = tables;
                             response.OutParams = sc.Out.ToArray();
-
-
                             return Ok(response);
-
                         }
                     }
                 }

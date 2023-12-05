@@ -154,7 +154,7 @@ deploy_stage_job:
   script:
     - '& "$env:DOTNET_PATH" publish "${env:STARTUP_PROJECT_FOLDER}\${env:STARTUP_PROJECT_FOLDER}.csproj" -c "${env:STAGING_CONFIGURATION}" -p:PublishProfile="${env:STARTUP_PROJECT_FOLDER}\Properties\PublishProfiles\${env:STAGING_PUBLISH_PROFILE_NAME}.pubxml"'
     # Comment out the line below if .net 5 or 6
-    - '& "$env:PARSE_WEB_CONFIG_APP" "${env:STARTUP_PROJECT_FOLDER}\bin\$env:STAGING_CONFIGURATION\$env:BUILD_SUB_FOLDER\publish\web.config" "$env:STAGING_PUBLISH_PROFILE_NAME" "$env:VERSION_DLL"'
+    # - '& "$env:PARSE_WEB_CONFIG_APP" "${env:STARTUP_PROJECT_FOLDER}\bin\$env:STAGING_CONFIGURATION\$env:BUILD_SUB_FOLDER\publish\web.config" "$env:STAGING_PUBLISH_PROFILE_NAME" "$env:VERSION_DLL"'
     # Comment out the line above if .net 5 or 6
     - '& "$env:DEPLOY_PACKAGED_APP_BATCH_FILE" "$env:STARTUP_PROJECT_FOLDER\bin\$env:STAGING_CONFIGURATION\$env:BUILD_SUB_FOLDER\$env:VERSION_DLL" "$env:STAGING_DEPLOY_ROOT\$env:STARTUP_PROJECT_FOLDER" "$env:STARTUP_PROJECT_FOLDER\bin\$env:STAGING_CONFIGURATION\$env:BUILD_SUB_FOLDER\publish\*"' # Copy contents of publish folder
   dependencies:

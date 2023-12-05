@@ -219,8 +219,8 @@ D:\Projects\Git\siemens-sap-web-api\TestOrderImport\bin\x64\Debug\net6.0-windows
 D:\Projects\Git\siemens-sap-web-api\TestOrderImport\bin\x64\Debug\net6.0-windows\Siemens.Sap.WebAPI.Common.dll
 D:\Projects\Git\siemens-sap-web-api\TestOrderImport\bin\x64\Debug\net6.0-windows\ERPConnectStandard20.dll
 D:\Projects\Git\siemens-sap-web-api\TestOrderImport\bin\x64\Debug\net6.0-windows\StrongInterop.ADODB.dll
-D:\Projects\Git\siemens-sap-web-api\TestOrderImport\bin\x64\Debug\net6.0-windows\Siemens.Sap.ERPConnect.Utilities.pdb
 D:\Projects\Git\siemens-sap-web-api\TestOrderImport\bin\x64\Debug\net6.0-windows\Siemens.Sap.WebAPI.Common.pdb
+D:\Projects\Git\siemens-sap-web-api\TestOrderImport\bin\x64\Debug\net6.0-windows\Siemens.Sap.ERPConnect.Utilities.pdb
 D:\Projects\Git\siemens-sap-web-api\TestOrderImport\obj\x64\Debug\net6.0-windows\TestOrderImport.csproj.AssemblyReference.cache
 D:\Projects\Git\siemens-sap-web-api\TestOrderImport\obj\x64\Debug\net6.0-windows\TestOrderImport.Form1.resources
 D:\Projects\Git\siemens-sap-web-api\TestOrderImport\obj\x64\Debug\net6.0-windows\TestOrderImport.csproj.GenerateResource.cache

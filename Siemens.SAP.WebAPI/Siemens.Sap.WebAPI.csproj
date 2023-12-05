@@ -6,16 +6,18 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Platforms>AnyCPU;x64</Platforms>
     <Configurations>Debug;Release;Staging;Develope</Configurations>
+    <AssemblyVersion>1.0.1.0</AssemblyVersion>
+    <FileVersion>1.0.1.0</FileVersion>
   </PropertyGroup>
 
   <ItemGroup>
 	<PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.19.5" />
-	<PackageReference Include="Siemens.Sap.ERPConnect.Utilities" Version="1.0.1" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
     <PackageReference Include="System.Configuration.ConfigurationManager" Version="7.0.0" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\siemens.sap.erpconnect.utilities\Siemens.Sap.ERPConnect.Utilities\Siemens.Sap.ERPConnect.Utilities.csproj" />
     <ProjectReference Include="..\Siemens.Sap.WebAPI.Common\Siemens.Sap.WebAPI.Common.csproj" />
   </ItemGroup>
 
@@ -23,6 +25,12 @@
     <Reference Include="ERPConnectStandard20">
       <HintPath>..\Siemens.Sap.ERPConnect.Utilities\Theobald\ERPConnectStandard20.dll</HintPath>
     </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="web.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 
 

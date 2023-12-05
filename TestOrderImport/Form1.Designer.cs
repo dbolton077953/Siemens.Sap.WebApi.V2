@@ -28,150 +28,148 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.OrderNumberTextBox = new System.Windows.Forms.TextBox();
-            this.GetBtn = new System.Windows.Forms.Button();
-            this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.OrdersGridView = new System.Windows.Forms.DataGridView();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.OperationsGridView = new System.Windows.Forms.DataGridView();
-            this.label2 = new System.Windows.Forms.Label();
-            this.EndPointDDL = new System.Windows.Forms.ComboBox();
-            this.tabControl1.SuspendLayout();
-            this.tabPage1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.OrdersGridView)).BeginInit();
-            this.tabPage2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.OperationsGridView)).BeginInit();
-            this.SuspendLayout();
+            label1 = new Label();
+            OrderNumberTextBox = new TextBox();
+            GetBtn = new Button();
+            tabControl1 = new TabControl();
+            tabPage1 = new TabPage();
+            OrdersGridView = new DataGridView();
+            tabPage2 = new TabPage();
+            OperationsGridView = new DataGridView();
+            label2 = new Label();
+            EndPointDDL = new ComboBox();
+            tabControl1.SuspendLayout();
+            tabPage1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)OrdersGridView).BeginInit();
+            tabPage2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)OperationsGridView).BeginInit();
+            SuspendLayout();
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(22, 29);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(87, 15);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Order Number:";
+            label1.AutoSize = true;
+            label1.Location = new Point(22, 29);
+            label1.Name = "label1";
+            label1.Size = new Size(87, 15);
+            label1.TabIndex = 0;
+            label1.Text = "Order Number:";
             // 
             // OrderNumberTextBox
             // 
-            this.OrderNumberTextBox.Location = new System.Drawing.Point(22, 47);
-            this.OrderNumberTextBox.Name = "OrderNumberTextBox";
-            this.OrderNumberTextBox.Size = new System.Drawing.Size(138, 23);
-            this.OrderNumberTextBox.TabIndex = 1;
+            OrderNumberTextBox.Location = new Point(22, 47);
+            OrderNumberTextBox.Name = "OrderNumberTextBox";
+            OrderNumberTextBox.Size = new Size(138, 23);
+            OrderNumberTextBox.TabIndex = 1;
+            OrderNumberTextBox.Text = "900001443884";
             // 
             // GetBtn
             // 
-            this.GetBtn.Location = new System.Drawing.Point(197, 46);
-            this.GetBtn.Name = "GetBtn";
-            this.GetBtn.Size = new System.Drawing.Size(75, 23);
-            this.GetBtn.TabIndex = 2;
-            this.GetBtn.Text = "Get Operations";
-            this.GetBtn.UseVisualStyleBackColor = true;
-            this.GetBtn.Click += new System.EventHandler(this.GetBtn_Click);
+            GetBtn.Location = new Point(197, 46);
+            GetBtn.Name = "GetBtn";
+            GetBtn.Size = new Size(75, 23);
+            GetBtn.TabIndex = 2;
+            GetBtn.Text = "Get Operations";
+            GetBtn.UseVisualStyleBackColor = true;
+            GetBtn.Click += GetBtn_Click;
             // 
             // tabControl1
             // 
-            this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Location = new System.Drawing.Point(23, 81);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(765, 357);
-            this.tabControl1.TabIndex = 3;
+            tabControl1.Controls.Add(tabPage1);
+            tabControl1.Controls.Add(tabPage2);
+            tabControl1.Location = new Point(23, 81);
+            tabControl1.Name = "tabControl1";
+            tabControl1.SelectedIndex = 0;
+            tabControl1.Size = new Size(765, 357);
+            tabControl1.TabIndex = 3;
             // 
             // tabPage1
             // 
-            this.tabPage1.Controls.Add(this.OrdersGridView);
-            this.tabPage1.Location = new System.Drawing.Point(4, 24);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(757, 329);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "Orders";
-            this.tabPage1.UseVisualStyleBackColor = true;
+            tabPage1.Controls.Add(OrdersGridView);
+            tabPage1.Location = new Point(4, 24);
+            tabPage1.Name = "tabPage1";
+            tabPage1.Padding = new Padding(3);
+            tabPage1.Size = new Size(757, 329);
+            tabPage1.TabIndex = 0;
+            tabPage1.Text = "Orders";
+            tabPage1.UseVisualStyleBackColor = true;
             // 
             // OrdersGridView
             // 
-            this.OrdersGridView.AllowUserToAddRows = false;
-            this.OrdersGridView.AllowUserToDeleteRows = false;
-            this.OrdersGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.OrdersGridView.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.OrdersGridView.Location = new System.Drawing.Point(3, 3);
-            this.OrdersGridView.Name = "OrdersGridView";
-            this.OrdersGridView.ReadOnly = true;
-            this.OrdersGridView.RowTemplate.Height = 25;
-            this.OrdersGridView.Size = new System.Drawing.Size(751, 323);
-            this.OrdersGridView.TabIndex = 0;
+            OrdersGridView.AllowUserToAddRows = false;
+            OrdersGridView.AllowUserToDeleteRows = false;
+            OrdersGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            OrdersGridView.Dock = DockStyle.Fill;
+            OrdersGridView.Location = new Point(3, 3);
+            OrdersGridView.Name = "OrdersGridView";
+            OrdersGridView.ReadOnly = true;
+            OrdersGridView.RowTemplate.Height = 25;
+            OrdersGridView.Size = new Size(751, 323);
+            OrdersGridView.TabIndex = 0;
             // 
             // tabPage2
             // 
-            this.tabPage2.Controls.Add(this.OperationsGridView);
-            this.tabPage2.Location = new System.Drawing.Point(4, 24);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(757, 329);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Operations";
-            this.tabPage2.UseVisualStyleBackColor = true;
+            tabPage2.Controls.Add(OperationsGridView);
+            tabPage2.Location = new Point(4, 24);
+            tabPage2.Name = "tabPage2";
+            tabPage2.Padding = new Padding(3);
+            tabPage2.Size = new Size(757, 329);
+            tabPage2.TabIndex = 1;
+            tabPage2.Text = "Operations";
+            tabPage2.UseVisualStyleBackColor = true;
             // 
             // OperationsGridView
             // 
-            this.OperationsGridView.AllowUserToAddRows = false;
-            this.OperationsGridView.AllowUserToDeleteRows = false;
-            this.OperationsGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.OperationsGridView.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.OperationsGridView.Location = new System.Drawing.Point(3, 3);
-            this.OperationsGridView.Name = "OperationsGridView";
-            this.OperationsGridView.ReadOnly = true;
-            this.OperationsGridView.RowTemplate.Height = 25;
-            this.OperationsGridView.Size = new System.Drawing.Size(751, 323);
-            this.OperationsGridView.TabIndex = 0;
+            OperationsGridView.AllowUserToAddRows = false;
+            OperationsGridView.AllowUserToDeleteRows = false;
+            OperationsGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            OperationsGridView.Dock = DockStyle.Fill;
+            OperationsGridView.Location = new Point(3, 3);
+            OperationsGridView.Name = "OperationsGridView";
+            OperationsGridView.ReadOnly = true;
+            OperationsGridView.RowTemplate.Height = 25;
+            OperationsGridView.Size = new Size(751, 323);
+            OperationsGridView.TabIndex = 0;
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(25, 5);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(58, 15);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "EndPoint:";
+            label2.AutoSize = true;
+            label2.Location = new Point(25, 5);
+            label2.Name = "label2";
+            label2.Size = new Size(58, 15);
+            label2.TabIndex = 4;
+            label2.Text = "EndPoint:";
             // 
             // EndPointDDL
             // 
-            this.EndPointDDL.FormattingEnabled = true;
-            this.EndPointDDL.Items.AddRange(new object[] {
-            "https://stage-core.con.siemens.co.uk/Siemens.Sap.WebAPI/api/v1/Rfc/CallRFC",
-            "https://localhost:7145/api/v1/Rfc/CallRFC"});
-            this.EndPointDDL.Location = new System.Drawing.Point(116, 4);
-            this.EndPointDDL.Name = "EndPointDDL";
-            this.EndPointDDL.Size = new System.Drawing.Size(558, 23);
-            this.EndPointDDL.TabIndex = 5;
-            this.EndPointDDL.SelectedIndexChanged += new System.EventHandler(this.EndPointDDL_SelectedIndexChanged);
+            EndPointDDL.FormattingEnabled = true;
+            EndPointDDL.Items.AddRange(new object[] { "https://stage-core.con.siemens.co.uk/Siemens.Sap.WebAPI/api/v1/Rfc/CallRFC", "https://localhost:7145/api/v1/Rfc/CallRFC" });
+            EndPointDDL.Location = new Point(116, 4);
+            EndPointDDL.Name = "EndPointDDL";
+            EndPointDDL.Size = new Size(558, 23);
+            EndPointDDL.TabIndex = 5;
+            EndPointDDL.SelectedIndexChanged += EndPointDDL_SelectedIndexChanged;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.EndPointDDL);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.tabControl1);
-            this.Controls.Add(this.GetBtn);
-            this.Controls.Add(this.OrderNumberTextBox);
-            this.Controls.Add(this.label1);
-            this.Name = "Form1";
-            this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
-            this.tabControl1.ResumeLayout(false);
-            this.tabPage1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.OrdersGridView)).EndInit();
-            this.tabPage2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.OperationsGridView)).EndInit();
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 450);
+            Controls.Add(EndPointDDL);
+            Controls.Add(label2);
+            Controls.Add(tabControl1);
+            Controls.Add(GetBtn);
+            Controls.Add(OrderNumberTextBox);
+            Controls.Add(label1);
+            Name = "Form1";
+            Text = "Form1";
+            Load += Form1_Load;
+            tabControl1.ResumeLayout(false);
+            tabPage1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)OrdersGridView).EndInit();
+            tabPage2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)OperationsGridView).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
