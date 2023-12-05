@@ -404,3 +404,5 @@ UnitTestSAPWebAPI/obj/Debug/net6.0/UnitTestSAPWebAPI.csproj.FileListAbsolute.txt
 UnitTestSAPWebAPI/obj/UnitTestSAPWebAPI.csproj.nuget.dgspec.json
 
 UnitTestSAPWebAPI/obj/UnitTestSAPWebAPI.csproj.nuget.g.props
+
+UnitTestSAPWebAPI/bin/Release/net6.0/CoverletSourceRootsMapping

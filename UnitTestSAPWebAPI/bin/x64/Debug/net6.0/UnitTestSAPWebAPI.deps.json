@@ -14,7 +14,6 @@
           "NUnit": "3.13.3",
           "NUnit.Analyzers": "3.3.0",
           "NUnit3TestAdapter": "4.2.1",
-          "Siemens.Sap.ERPConnect.Utilities": "1.0.0",
           "Siemens.Sap.WebAPI.Common": "1.0.0",
           "coverlet.collector": "3.1.2"
         },
@@ -1701,7 +1700,7 @@
           }
         }
       },
-      "Siemens.Sap.ERPConnect.Utilities/1.0.0": {
+      "Siemens.Sap.ERPConnect.Utilities/1.0.1": {
         "dependencies": {
           "Microsoft.Extensions.Configuration": "6.0.1",
           "Newtonsoft.Json": "13.0.1",
@@ -1715,7 +1714,7 @@
       "Siemens.Sap.WebAPI.Common/1.0.0": {
         "dependencies": {
           "Microsoft.AspNetCore.Mvc.Core": "2.2.5",
-          "Siemens.Sap.ERPConnect.Utilities": "1.0.0"
+          "Siemens.Sap.ERPConnect.Utilities": "1.0.1"
         },
         "runtime": {
           "Siemens.Sap.WebAPI.Common.dll": {}
@@ -2753,7 +2752,7 @@
       "path": "system.windows.extensions/6.0.0",
       "hashPath": "system.windows.extensions.6.0.0.nupkg.sha512"
     },
-    "Siemens.Sap.ERPConnect.Utilities/1.0.0": {
+    "Siemens.Sap.ERPConnect.Utilities/1.0.1": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
