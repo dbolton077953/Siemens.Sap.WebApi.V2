@@ -1,6 +1,7 @@
 
 
 using Microsoft.Extensions.DependencyInjection;
+using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using NuGet.Frameworks;
 using NUnit.Framework;
@@ -15,8 +16,8 @@ using System.Xml.Linq;
 
 namespace UnitTestSAPWebAPI
 {
-    /*
-    internal class Tests:UnitTestBase
+
+    internal class Tests : UnitTestBase
     {
 
         private App _app;
@@ -34,7 +35,7 @@ namespace UnitTestSAPWebAPI
         [Test]
         public void TestOrderBOM()
         {
-    
+
             List<SAPParameter> listX = new List<SAPParameter>();
             listX.Add(new SAPParameter { Name = "OPERATIONS", Value = "X" });
             listX.Add(new SAPParameter { Name = "COMPONENTS", Value = "X" });
@@ -45,7 +46,7 @@ namespace UnitTestSAPWebAPI
 
                 SAPRFCInformation = new ExecuteInformation()
                 {
-                    RFCUser="RFC_CPO",
+                    RFCUser = "RFC_CPO",
                     CommandText = "BAPI_PRODORD_GET_DETAIL",
                     ParameterInformationArray = new ParameterInformation[]
                         {
@@ -87,7 +88,7 @@ namespace UnitTestSAPWebAPI
 
 
             }
-    
+
         }
 
 
@@ -105,7 +106,7 @@ namespace UnitTestSAPWebAPI
 
                 SAPRFCInformation = new ExecuteInformation()
                 {
-                    RFCUser="RFC_CPO",
+                    RFCUser = "RFC_CPO",
                     CommandText = "BAPI_PRODORD_GET_DETAIL",
                     ParameterInformationArray = new ParameterInformation[]
                     {
@@ -129,7 +130,7 @@ namespace UnitTestSAPWebAPI
                     },
                     OutParameterInformationArray = new ParameterInformation[]
                     {
-                        
+
                         new ParameterInformation()
                         {
                             ContainerName = "RETURN",
@@ -151,7 +152,7 @@ namespace UnitTestSAPWebAPI
             string apiResponse = response.Content.ReadAsStringAsync().Result;
             var res = Newtonsoft.Json.JsonConvert.DeserializeObject<SAPCommandResponse>(apiResponse);
 
-            Assert.IsTrue(response.StatusCode ==  HttpStatusCode.NotFound);
+            Assert.IsTrue(response.StatusCode == HttpStatusCode.NotFound);
 
             if (response.StatusCode == HttpStatusCode.NotFound)
             {
@@ -178,7 +179,7 @@ namespace UnitTestSAPWebAPI
                     RequiresSession = true,
                     ParameterInformationArray = new ParameterInformation[]
                     {
-                        
+
                             new ParameterInformation()
                             {
                                 ContainerName="BAPI_PO_GETDETAIL1",
@@ -228,10 +229,10 @@ namespace UnitTestSAPWebAPI
                 Assert.IsNotEmpty(vendor);
 
             }
- 
+
         }
 
-    
+
         [Test]
         public void RFCReadTable()
         {
@@ -375,7 +376,7 @@ namespace UnitTestSAPWebAPI
                                     new SAPParameter { Name = "GL_ACCOUNT",Value="0000696110"}
                                 })
                             },
-       
+
                     },
                     OutParameterInformationArray = new ParameterInformation[]
                      {
@@ -422,7 +423,7 @@ namespace UnitTestSAPWebAPI
 
                 Assert.IsTrue(tbls.Length > 0);
 
-                var docNumber= res.OutParams[0].Value.ToString();
+                var docNumber = res.OutParams[0].Value.ToString();
 
                 Assert.IsNotEmpty(docNumber);
 
@@ -454,7 +455,7 @@ namespace UnitTestSAPWebAPI
                                     new SAPParameter { Name = "PLANT", Value="1011" },
                                     new SAPParameter { Name = "MATERIAL", Value="1790L801A"},
                                     new SAPParameter { Name = "UNIT", Value="PC"}
-                                   
+
                                 })
                             }
 
@@ -493,7 +494,7 @@ namespace UnitTestSAPWebAPI
             string apiResponse = response.Content.ReadAsStringAsync().Result;
             var res = Newtonsoft.Json.JsonConvert.DeserializeObject<SAPCommandResponse>(apiResponse);
 
-            if(response.IsSuccessStatusCode)
+            if (response.IsSuccessStatusCode)
             {
                 Assert.IsTrue(res.OutParams[0].Value != "");
             }
@@ -501,9 +502,113 @@ namespace UnitTestSAPWebAPI
 
         }
 
-    
+
+
+        [Test]
+        public void TestGetMaterialOpenOrders()
+        { 
+ 
+            var request = new SAPCommandRequest()
+            {
+
+                SAPRFCInformation = new ExecuteInformation()
+                {
+                    RFCUser="RFC_CPO",
+                    CommandText = "BAPI_PRODORD_GET_LIST",
+                    RequiresSession = true,
+                    ParameterInformationArray = new ParameterInformation[]
+                    {
+
+                                new ParameterInformation()
+                                {
+                                    ContainerName="MATERIAL_RANGE",
+                                    ContainerType = ContainerType.Table,
+                                    ContainerOrdinalPosition=0,
+
+                                    Parameters = new List<SAPParameter>(new SAPParameter[]
+                                    {
+                                        new SAPParameter { Name = "SIGN", Value="I" },
+                                        new SAPParameter { Name = "OPTION", Value="EQ"},
+                                        new SAPParameter { Name = "LOW", Value="A5E31408304SM"}, // "6SL3511-1PE23-0AM0
+                                        new SAPParameter { Name = "HIGH", Value=""},
+                                    })
+                                }
+
+                    },
+                    OutParameterInformationArray = new ParameterInformation[]
+                     {
+
+                                new ParameterInformation()
+                                {
+                                    ContainerName = "RETURN",
+                                    ContainerType = ContainerType.Structure,
+                                    ContainerOrdinalPosition = 0,
+                                    Parameters = new List<SAPParameter>( new SAPParameter[]
+                                    {
+                                        new SAPParameter { Name = "NUMBER", Value="" },
+                                        new SAPParameter { Name = "MESSAGE", Value=""}
+                                    })
+
+                                 }
+                    }
+                }
+            };
+
+
+            HttpResponseMessage response = _app.GetInfoFromSAP(request);
+
+
+            string apiResponse = response.Content.ReadAsStringAsync().Result;
+            var res = Newtonsoft.Json.JsonConvert.DeserializeObject<SAPCommandResponse>(apiResponse);
+
+            if (response.StatusCode == HttpStatusCode.OK)
+            {
+                List<OrdersForMaterialMessage>  orders  = new List<OrdersForMaterialMessage>();
+
+                DataTable[] tbls = GetTables(res.Tables);
+
+  
+
+                foreach(DataRow r in tbls[1].Rows)
+                {
+
+
+                    if (r["ORDER_NUMBER"].ToString().Trim()== "900001496719")
+                    {
+                        int dd = 0;
+                    }
+
+                    orders.Add(new OrdersForMaterialMessage()
+                    {
+                        MaterialNumber = r["MATERIAL"].ToString(),
+                        SystemStatus = r["SYSTEM_STATUS"].ToString(),
+                        OrderNumber = r["ORDER_NUMBER"].ToString(),
+                        TargetQty = Convert.ToDecimal(r["TARGET_QUANTITY"]),
+                        ConfirmedQty = Convert.ToDecimal(r["CONFIRMED_QUANTITY"])
+                    });
+                    
+                }
+
+                // fILTER dATAt
+
+                var matches = orders.Where(o => !o.SystemStatus.Contains("CLS")  && !o.SystemStatus.Contains("DLV") && !o.SystemStatus.Contains("TECO"));
+
+                var totalTargetQty = matches.Sum(o => o.TargetQty);
+
+                var totalConfirmedQty = matches.Sum(o => o.ConfirmedQty);
+
+
+                var outstandingQty = totalTargetQty - totalConfirmedQty;
+
+                Assert.IsTrue(tbls.Length > 0);
+
+                var docNumber = res.OutParams[0].Value.ToString();
+
+                Assert.IsNotEmpty(docNumber);
+
+            }
+
+        }
 
     }
-
-    */
 }
