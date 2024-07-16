@@ -1,9 +1,7 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Newtonsoft.Json;
 using Siemens.Sap.ERPConnect.Utilities;
-using System.Data;
 using System.Runtime.Serialization;
-using System.ComponentModel;
-using Newtonsoft.Json;
+using System.Text.Json.Serialization;
 
 namespace Siemens.Sap.WebAPI.Common.Models
 {
@@ -18,11 +16,13 @@ namespace Siemens.Sap.WebAPI.Common.Models
 
 
 
-        [JsonProperty("OutParams")]
+        [JsonProperty("outParams")]
+        [JsonPropertyName("outParams")]
         public SAPParameter[] OutParams { get; set; }
 
 
-        [JsonProperty("Tables")]
+        [JsonProperty("tables")]
+        [JsonPropertyName("tables")]
         public string Tables { get; set; }
       
 
