@@ -1,18 +1,11 @@
 
 
+using FluentAssertions;
 using Microsoft.Extensions.DependencyInjection;
-using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
-using NuGet.Frameworks;
-using NUnit.Framework;
 using Siemens.Sap.ERPConnect.Utilities;
 using Siemens.Sap.WebAPI.Common.Models;
 using System.Data;
-using System.Diagnostics;
-using System.Drawing;
 using System.Net;
-using System.Text.Json;
-using System.Xml.Linq;
 
 namespace UnitTestSAPWebAPI
 {
@@ -77,14 +70,14 @@ namespace UnitTestSAPWebAPI
             string apiResponse = response.Content.ReadAsStringAsync().Result;
             var res = Newtonsoft.Json.JsonConvert.DeserializeObject<SAPCommandResponse>(apiResponse);
 
-            Assert.IsTrue(response.StatusCode == HttpStatusCode.OK);
+            response.StatusCode.Should().Be(HttpStatusCode.OK);
 
             if (response.StatusCode == HttpStatusCode.OK)
             {
 
                 DataTable[] tbls = GetTables(res.Tables);
 
-                Assert.IsTrue(tbls.Length == 2);
+                tbls.Should().HaveCount(2);
 
 
             }
@@ -152,13 +145,13 @@ namespace UnitTestSAPWebAPI
             string apiResponse = response.Content.ReadAsStringAsync().Result;
             var res = Newtonsoft.Json.JsonConvert.DeserializeObject<SAPCommandResponse>(apiResponse);
 
-            Assert.IsTrue(response.StatusCode == HttpStatusCode.NotFound);
+            response.StatusCode.Should().Be(HttpStatusCode.NotFound);
 
             if (response.StatusCode == HttpStatusCode.NotFound)
             {
 
 
-                Assert.IsTrue(response.IsSuccessStatusCode == false);
+                response.IsSuccessStatusCode.Should().BeFalse();
 
 
             }
@@ -222,11 +215,11 @@ namespace UnitTestSAPWebAPI
 
                 DataTable[] tbls = GetTables(res.Tables);
 
-                Assert.IsTrue(tbls.Length > 0);
+                tbls.Length.Should().BeGreaterThan(0);
 
                 var vendor = res.OutParams[0].Value.ToString();
 
-                Assert.IsNotEmpty(vendor);
+                vendor.Should().NotBeEmpty();
 
             }
 
@@ -309,7 +302,7 @@ namespace UnitTestSAPWebAPI
 
                 DataTable[] tbls = GetTables(res.Tables);
 
-                Assert.IsTrue(tbls.Length > 0);
+                tbls.Length.Should().BeGreaterThan(0);
 
 
             }
@@ -421,11 +414,11 @@ namespace UnitTestSAPWebAPI
 
                 DataTable[] tbls = GetTables(res.Tables);
 
-                Assert.IsTrue(tbls.Length > 0);
+                tbls.Length.Should().BeGreaterThan(0);
 
                 var docNumber = res.OutParams[0].Value.ToString();
 
-                Assert.IsNotEmpty(docNumber);
+                docNumber.Should().NotBeEmpty();
 
             }
 
@@ -496,7 +489,7 @@ namespace UnitTestSAPWebAPI
 
             if (response.IsSuccessStatusCode)
             {
-                Assert.IsTrue(res.OutParams[0].Value != "");
+                res.OutParams[0].Value.ToString().Should().NotBeEmpty();
             }
 
 
@@ -600,11 +593,11 @@ namespace UnitTestSAPWebAPI
 
                 var outstandingQty = totalTargetQty - totalConfirmedQty;
 
-                Assert.IsTrue(tbls.Length > 0);
+                tbls.Length.Should().BeGreaterThan(0);
 
                 var docNumber = res.OutParams[0].Value.ToString();
 
-                Assert.IsNotEmpty(docNumber);
+                docNumber.Should().NotBeEmpty();
 
             }
 

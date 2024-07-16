@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+﻿using FluentAssertions;
+using Microsoft.Extensions.DependencyInjection;
 using Siemens.Sap.WebAPI.Common.Models;
 using System;
 using System.Collections.Generic;
@@ -45,11 +46,11 @@ namespace UnitTestSAPWebAPI
             var res = Newtonsoft.Json.JsonConvert.DeserializeObject<SAPReadTableResponse>(apiResponse);
 
 
-            Assert.IsTrue(response.StatusCode == HttpStatusCode.OK);
+            response.StatusCode.Should().Be(HttpStatusCode.OK);
 
             DataTable[] tbls = GetTables(res.Results);
 
-            Assert.IsTrue(tbls.Length == 1);
+            tbls.Should().HaveCount(1);
 
 
 
@@ -75,11 +76,11 @@ namespace UnitTestSAPWebAPI
             var res = Newtonsoft.Json.JsonConvert.DeserializeObject<SAPReadTableResponse>(apiResponse);
 
 
-            Assert.IsTrue(response.StatusCode == HttpStatusCode.OK);
+            response.StatusCode.Should().Be(HttpStatusCode.OK);
 
             DataTable[] tbls = GetTables(res.Results);
 
-            Assert.IsTrue(tbls.Length == 1);
+            tbls.Should().HaveCount(1);
 
 
 
@@ -106,7 +107,7 @@ namespace UnitTestSAPWebAPI
             var res = Newtonsoft.Json.JsonConvert.DeserializeObject<SAPReadTableResponse>(apiResponse);
 
 
-            Assert.IsTrue(response.StatusCode == HttpStatusCode.OK);
+            response.StatusCode.Should().Be(HttpStatusCode.OK);
 
             DataTable[] tbls = GetTables(res.Results);
 
@@ -133,7 +134,7 @@ namespace UnitTestSAPWebAPI
 
 
 
-            Assert.IsTrue(tbls.Length == 1);
+            tbls.Should().HaveCount(1);
 
 
 
