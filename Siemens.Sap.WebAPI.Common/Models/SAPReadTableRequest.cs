@@ -1,10 +1,6 @@
 ﻿using Newtonsoft.Json;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Runtime.Serialization;
-using System.Text;
-using System.Threading.Tasks;
+using System.Text.Json.Serialization;
 
 namespace Siemens.Sap.WebAPI.Common.Models
 {
@@ -17,16 +13,20 @@ namespace Siemens.Sap.WebAPI.Common.Models
 
         }
 
-        [JsonProperty("SAPTableName")]
+        [JsonProperty("sapTableName")]
+        [JsonPropertyName("sapTableName")]
         public string SAPTableName { get; set; } = string.Empty;
 
-        [JsonProperty("SAPTableFieldNames")]
+        [JsonProperty("sapTableFieldNames")]
+        [JsonPropertyName("sapTableFieldNames")]
         public string[] SAPTableFieldNames { get; set; }
 
-        [JsonProperty("MaxRowsToReturn")]
+        [JsonProperty("maxRowsToReturn")]
+        [JsonPropertyName("maxRowsToReturn")]
         public int MaxRowsToReturn { get; set; } = 0;
 
-        [JsonProperty("WhereClause")]
+        [JsonProperty("whereClause")]
+        [JsonPropertyName("whereClause")]
         public string WhereClause { get; set; } = string.Empty;
 
 

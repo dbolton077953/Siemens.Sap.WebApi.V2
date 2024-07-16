@@ -1,6 +1,7 @@
 ﻿using Newtonsoft.Json;
 using Siemens.Sap.ERPConnect.Utilities;
 using System.Runtime.Serialization;
+using System.Text.Json.Serialization;
 
 namespace Siemens.Sap.WebAPI.Common.Models
 {
@@ -14,7 +15,8 @@ namespace Siemens.Sap.WebAPI.Common.Models
         }
 
     
-        [JsonProperty("SAPRFCInformation")]
+        [JsonProperty("saprfcInformation")]
+        [JsonPropertyName("saprfcInformation")]
         public ExecuteInformation SAPRFCInformation { get; set; }
 
  
