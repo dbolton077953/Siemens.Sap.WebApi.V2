@@ -368,3 +368,7 @@ secrets.json
 */.vs
 */bin/
 */obj/
+
+*.targets
+
+*.exe
