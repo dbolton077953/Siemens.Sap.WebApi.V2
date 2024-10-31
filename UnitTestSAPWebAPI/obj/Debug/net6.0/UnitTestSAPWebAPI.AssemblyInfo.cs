@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("UnitTestSAPWebAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5932c12e4b395c840d6046928a67f95b633a8ea2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f4deeda976ee61d29abb75a19eb5baeb29fbcb29")]
 [assembly: System.Reflection.AssemblyProductAttribute("UnitTestSAPWebAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("UnitTestSAPWebAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
