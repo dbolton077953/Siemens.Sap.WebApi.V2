@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using Siemens.Sap.WebAPI.Common.Models;
 using System.Reflection;
 using System.Linq.Expressions;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Siemens.Sap.WebAPI.Controllers
 {
@@ -36,6 +37,7 @@ namespace Siemens.Sap.WebAPI.Controllers
 
 
         [HttpPost]
+        [Authorize(Policy = Policies.SapApiAdminRole)]
         [Route("[Action]", Name = "CallRFC")]
         public ActionResult<SAPCommandResponse> CallRFC([FromBody] SAPCommandRequest request)
         {
@@ -115,6 +117,7 @@ namespace Siemens.Sap.WebAPI.Controllers
 
 
         [HttpPost]
+        [Authorize(Policy = Policies.SapApiAdminRole)]
         [Route("[Action]", Name = "ReadFromSAPTable")]
         public ActionResult<SAPReadTableResponse> ReadFromSAPTable([FromBody] SAPReadTableRequest request)
         {
