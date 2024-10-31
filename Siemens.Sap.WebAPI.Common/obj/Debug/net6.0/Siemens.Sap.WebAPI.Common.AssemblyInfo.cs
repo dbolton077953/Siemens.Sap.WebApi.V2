@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Siemens.Sap.WebAPI.Common")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.3.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.3+f4deeda976ee61d29abb75a19eb5baeb29fbcb29")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.3+7c689a09c248a2dc73542ce22788cd050a4e9500")]
 [assembly: System.Reflection.AssemblyProductAttribute("Siemens.Sap.WebAPI.Common")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Siemens.Sap.WebAPI.Common")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.3.0")]

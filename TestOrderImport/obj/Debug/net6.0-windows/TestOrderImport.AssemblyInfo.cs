@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TestOrderImport")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f4deeda976ee61d29abb75a19eb5baeb29fbcb29")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7c689a09c248a2dc73542ce22788cd050a4e9500")]
 [assembly: System.Reflection.AssemblyProductAttribute("TestOrderImport")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TestOrderImport")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
