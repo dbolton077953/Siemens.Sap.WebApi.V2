@@ -1,0 +1,3 @@
+[submodule "siemens.sap.erpconnect.utilities"]
+	path = siemens.sap.erpconnect.utilities
+	url = git@code.siemens.com:CongletonSoftwareDevelopment/shared/siemens.sap.erpconnect.utilities.git
