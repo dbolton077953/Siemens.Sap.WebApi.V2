@@ -14,7 +14,11 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TestOrderImport")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
+<<<<<<< Updated upstream
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5924215fbd5e0183b0faa46d3be7ac7bcbbfb18d")]
+=======
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5932c12e4b395c840d6046928a67f95b633a8ea2")]
+>>>>>>> Stashed changes
 [assembly: System.Reflection.AssemblyProductAttribute("TestOrderImport")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TestOrderImport")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
