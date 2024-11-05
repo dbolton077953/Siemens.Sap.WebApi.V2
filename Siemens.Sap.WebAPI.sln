@@ -11,7 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestOrderImport", "TestOrde
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnitTestSAPWebAPI", "UnitTestSAPWebAPI\UnitTestSAPWebAPI.csproj", "{69E79F7E-D18D-4E0F-BF94-DFB68ED98CA3}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Siemens.Sap.ERPConnect.Utilities", "..\siemens.sap.erpconnect.utilities\Siemens.Sap.ERPConnect.Utilities\Siemens.Sap.ERPConnect.Utilities.csproj", "{7F492BEB-7D74-4842-AC3F-482C24867924}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Siemens.Sap.ERPConnect.Utilities", "siemens.sap.erpconnect.utilities\Siemens.Sap.ERPConnect.Utilities\Siemens.Sap.ERPConnect.Utilities.csproj", "{7F492BEB-7D74-4842-AC3F-482C24867924}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
