@@ -11,7 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestOrderImport", "TestOrde
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnitTestSAPWebAPI", "UnitTestSAPWebAPI\UnitTestSAPWebAPI.csproj", "{69E79F7E-D18D-4E0F-BF94-DFB68ED98CA3}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Siemens.Sap.ERPConnect.Utilities", "..\siemens.sap.erpconnect.utilities\Siemens.Sap.ERPConnect.Utilities\Siemens.Sap.ERPConnect.Utilities.csproj", "{7F492BEB-7D74-4842-AC3F-482C24867924}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Siemens.Sap.ERPConnect.Utilities", "..\siemens.sap.erpconnect.utilities\Siemens.Sap.ERPConnect.Utilities\Siemens.Sap.ERPConnect.Utilities.csproj", "{B45D3EBA-64BC-4047-8EE1-56D0B99AA791}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -89,22 +89,22 @@ Global
 		{69E79F7E-D18D-4E0F-BF94-DFB68ED98CA3}.Staging|Any CPU.Build.0 = Staging|Any CPU
 		{69E79F7E-D18D-4E0F-BF94-DFB68ED98CA3}.Staging|x64.ActiveCfg = Staging|x64
 		{69E79F7E-D18D-4E0F-BF94-DFB68ED98CA3}.Staging|x64.Build.0 = Staging|x64
-		{7F492BEB-7D74-4842-AC3F-482C24867924}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7F492BEB-7D74-4842-AC3F-482C24867924}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7F492BEB-7D74-4842-AC3F-482C24867924}.Debug|x64.ActiveCfg = Debug|x64
-		{7F492BEB-7D74-4842-AC3F-482C24867924}.Debug|x64.Build.0 = Debug|x64
-		{7F492BEB-7D74-4842-AC3F-482C24867924}.Develope|Any CPU.ActiveCfg = Develope|Any CPU
-		{7F492BEB-7D74-4842-AC3F-482C24867924}.Develope|Any CPU.Build.0 = Develope|Any CPU
-		{7F492BEB-7D74-4842-AC3F-482C24867924}.Develope|x64.ActiveCfg = Develope|x64
-		{7F492BEB-7D74-4842-AC3F-482C24867924}.Develope|x64.Build.0 = Develope|x64
-		{7F492BEB-7D74-4842-AC3F-482C24867924}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7F492BEB-7D74-4842-AC3F-482C24867924}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7F492BEB-7D74-4842-AC3F-482C24867924}.Release|x64.ActiveCfg = Release|x64
-		{7F492BEB-7D74-4842-AC3F-482C24867924}.Release|x64.Build.0 = Release|x64
-		{7F492BEB-7D74-4842-AC3F-482C24867924}.Staging|Any CPU.ActiveCfg = Staging|Any CPU
-		{7F492BEB-7D74-4842-AC3F-482C24867924}.Staging|Any CPU.Build.0 = Staging|Any CPU
-		{7F492BEB-7D74-4842-AC3F-482C24867924}.Staging|x64.ActiveCfg = Staging|x64
-		{7F492BEB-7D74-4842-AC3F-482C24867924}.Staging|x64.Build.0 = Staging|x64
+		{B45D3EBA-64BC-4047-8EE1-56D0B99AA791}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B45D3EBA-64BC-4047-8EE1-56D0B99AA791}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B45D3EBA-64BC-4047-8EE1-56D0B99AA791}.Debug|x64.ActiveCfg = Debug|x64
+		{B45D3EBA-64BC-4047-8EE1-56D0B99AA791}.Debug|x64.Build.0 = Debug|x64
+		{B45D3EBA-64BC-4047-8EE1-56D0B99AA791}.Develope|Any CPU.ActiveCfg = Develope|Any CPU
+		{B45D3EBA-64BC-4047-8EE1-56D0B99AA791}.Develope|Any CPU.Build.0 = Develope|Any CPU
+		{B45D3EBA-64BC-4047-8EE1-56D0B99AA791}.Develope|x64.ActiveCfg = Develope|x64
+		{B45D3EBA-64BC-4047-8EE1-56D0B99AA791}.Develope|x64.Build.0 = Develope|x64
+		{B45D3EBA-64BC-4047-8EE1-56D0B99AA791}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B45D3EBA-64BC-4047-8EE1-56D0B99AA791}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B45D3EBA-64BC-4047-8EE1-56D0B99AA791}.Release|x64.ActiveCfg = Release|x64
+		{B45D3EBA-64BC-4047-8EE1-56D0B99AA791}.Release|x64.Build.0 = Release|x64
+		{B45D3EBA-64BC-4047-8EE1-56D0B99AA791}.Staging|Any CPU.ActiveCfg = Staging|Any CPU
+		{B45D3EBA-64BC-4047-8EE1-56D0B99AA791}.Staging|Any CPU.Build.0 = Staging|Any CPU
+		{B45D3EBA-64BC-4047-8EE1-56D0B99AA791}.Staging|x64.ActiveCfg = Staging|x64
+		{B45D3EBA-64BC-4047-8EE1-56D0B99AA791}.Staging|x64.Build.0 = Staging|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
