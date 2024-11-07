@@ -1,0 +1,77 @@
+[
+  {
+    "ContainingType": "Siemens.Sap.WebAPI.Controllers.RfcController",
+    "Method": "CallRFC",
+    "RelativePath": "api/v1/Rfc/CallRFC",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Siemens.Sap.WebAPI.Common.Models.SAPCommandRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Siemens.Sap.WebAPI.Common.Models.SAPCommandResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "CallRFC"
+  },
+  {
+    "ContainingType": "Siemens.Sap.WebAPI.Controllers.RfcController",
+    "Method": "ReadFromSAPTable",
+    "RelativePath": "api/v1/Rfc/ReadFromSAPTable",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Siemens.Sap.WebAPI.Common.Models.SAPReadTableRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Siemens.Sap.WebAPI.Common.Models.SAPReadTableResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "ReadFromSAPTable"
+  },
+  {
+    "ContainingType": "Siemens.Sap.WebAPI.Controllers.RfcController",
+    "Method": "Test",
+    "RelativePath": "api/v1/Rfc/Test",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "Test"
+  }
+]

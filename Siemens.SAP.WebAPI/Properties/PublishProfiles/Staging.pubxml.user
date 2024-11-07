@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project>
+  <PropertyGroup>
+    <_PublishTargetUrl>D:\Git\siemens-sap-web-api\Siemens.SAP.WebAPI\bin\Staging\net6.0\publish\</_PublishTargetUrl>
+    <History>True|2024-11-05T11:05:29.2255392Z||;True|2024-11-05T10:53:00.4021509+00:00||;True|2024-11-05T10:36:07.1612424+00:00||;True|2024-10-31T16:00:33.9643947+00:00||;True|2024-10-31T15:48:33.1584355+00:00||;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="SAPNetWeaver/32bit Dlls/sapnwrfc.lib">
+      <publishTime>10/31/2024 08:08:08</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

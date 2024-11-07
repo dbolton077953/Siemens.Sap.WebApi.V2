@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\Siemens.Sap.WebAPI.props" />
+</Project>

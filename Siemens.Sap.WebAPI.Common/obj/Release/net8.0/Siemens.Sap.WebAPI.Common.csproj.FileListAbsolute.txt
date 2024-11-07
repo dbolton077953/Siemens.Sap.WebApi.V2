@@ -1,0 +1,17 @@
+D:\Git\siemens-sap-web-api\Siemens.Sap.WebAPI.Common\bin\Release\net8.0\Siemens.Sap.WebAPI.Common.deps.json
+D:\Git\siemens-sap-web-api\Siemens.Sap.WebAPI.Common\bin\Release\net8.0\Siemens.Sap.WebAPI.Common.dll
+D:\Git\siemens-sap-web-api\Siemens.Sap.WebAPI.Common\bin\Release\net8.0\Siemens.Sap.WebAPI.Common.pdb
+D:\Git\siemens-sap-web-api\Siemens.Sap.WebAPI.Common\bin\Release\net8.0\Siemens.Sap.ERPConnect.Utilities.dll
+D:\Git\siemens-sap-web-api\Siemens.Sap.WebAPI.Common\bin\Release\net8.0\ERPConnectStandard20.dll
+D:\Git\siemens-sap-web-api\Siemens.Sap.WebAPI.Common\bin\Release\net8.0\StrongInterop.ADODB.dll
+D:\Git\siemens-sap-web-api\Siemens.Sap.WebAPI.Common\bin\Release\net8.0\Siemens.Sap.ERPConnect.Utilities.pdb
+D:\Git\siemens-sap-web-api\Siemens.Sap.WebAPI.Common\obj\Release\net8.0\Siemens.Sap.WebAPI.Common.csproj.AssemblyReference.cache
+D:\Git\siemens-sap-web-api\Siemens.Sap.WebAPI.Common\obj\Release\net8.0\Siemens.Sap.WebAPI.Common.GeneratedMSBuildEditorConfig.editorconfig
+D:\Git\siemens-sap-web-api\Siemens.Sap.WebAPI.Common\obj\Release\net8.0\Siemens.Sap.WebAPI.Common.AssemblyInfoInputs.cache
+D:\Git\siemens-sap-web-api\Siemens.Sap.WebAPI.Common\obj\Release\net8.0\Siemens.Sap.WebAPI.Common.AssemblyInfo.cs
+D:\Git\siemens-sap-web-api\Siemens.Sap.WebAPI.Common\obj\Release\net8.0\Siemens.Sap.WebAPI.Common.csproj.CoreCompileInputs.cache
+D:\Git\siemens-sap-web-api\Siemens.Sap.WebAPI.Common\obj\Release\net8.0\Siemens..864DA5CD.Up2Date
+D:\Git\siemens-sap-web-api\Siemens.Sap.WebAPI.Common\obj\Release\net8.0\Siemens.Sap.WebAPI.Common.dll
+D:\Git\siemens-sap-web-api\Siemens.Sap.WebAPI.Common\obj\Release\net8.0\refint\Siemens.Sap.WebAPI.Common.dll
+D:\Git\siemens-sap-web-api\Siemens.Sap.WebAPI.Common\obj\Release\net8.0\Siemens.Sap.WebAPI.Common.pdb
+D:\Git\siemens-sap-web-api\Siemens.Sap.WebAPI.Common\obj\Release\net8.0\ref\Siemens.Sap.WebAPI.Common.dll

@@ -1,0 +1,7 @@
+D:\Git\siemens-sap-web-api\Siemens.SAP.WebAPI\obj\Debug\net6.0\Siemens.Sap.WebAPI.csproj.AssemblyReference.cache
+D:\Git\siemens-sap-web-api\Siemens.SAP.WebAPI\obj\Debug\net6.0\Siemens.Sap.WebAPI.GeneratedMSBuildEditorConfig.editorconfig
+D:\Git\siemens-sap-web-api\Siemens.SAP.WebAPI\obj\Debug\net6.0\Siemens.Sap.WebAPI.AssemblyInfoInputs.cache
+D:\Git\siemens-sap-web-api\Siemens.SAP.WebAPI\obj\Debug\net6.0\Siemens.Sap.WebAPI.AssemblyInfo.cs
+D:\Git\siemens-sap-web-api\Siemens.SAP.WebAPI\obj\Debug\net6.0\Siemens.Sap.WebAPI.csproj.CoreCompileInputs.cache
+D:\Git\siemens-sap-web-api\Siemens.SAP.WebAPI\obj\Debug\net6.0\Siemens.Sap.WebAPI.MvcApplicationPartsAssemblyInfo.cs
+D:\Git\siemens-sap-web-api\Siemens.SAP.WebAPI\obj\Debug\net6.0\Siemens.Sap.WebAPI.MvcApplicationPartsAssemblyInfo.cache

@@ -1,0 +1,10 @@
+
+**** Log file opened at 2024-11-06 09:18:30.036467 UTC+00:00 (GMT Standard Time), Encoding UTF-8
+NW RFC Library: SDK variant, Release 750 Patch Level 8, Compiled on Apr 17 2021 03:23:42
+ CPIC library: 753.2020.03.230 version 3, NI library: 40, Kernel Release: 753 Patch Level 814
+ Current working directory: D:\Git\siemens-sap-web-api\Siemens.SAP.WebAPI, Program: Siemens
+ Hardware: PC with Windows NT 24x AMD64 Level 6 (Mod 151 Step 2), Operating_system: Windows NT 10.0
+ Hostname: DINHRRIRTWE5SUR, IP address: 172.21.176.1, IPv6 address: ::1
+
+2024-11-06 09:18:30.036615 [21688] >> Info entry
+	Did find config file D:\Git\siemens-sap-web-api\Siemens.SAP.WebAPI\sapnwrfc.ini.

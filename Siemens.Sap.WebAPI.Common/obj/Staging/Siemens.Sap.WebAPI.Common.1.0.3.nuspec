@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Siemens.Sap.WebAPI.Common</id>
+    <version>1.0.3</version>
+    <authors>Siemens.Sap.WebAPI.Common</authors>
+    <description>Package Description</description>
+    <repository type="git" commit="aa21d81fa6608a9556c1e86f0774b729883d160f" />
+    <dependencies>
+      <group targetFramework="net8.0">
+        <dependency id="Siemens.Sap.ERPConnect.Utilities" version="1.0.1" exclude="Build,Analyzers" />
+        <dependency id="System.Text.Json" version="8.0.5" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="D:\Git\siemens-sap-web-api\Siemens.Sap.WebAPI.Common\bin\Staging\net8.0\Siemens.Sap.WebAPI.Common.dll" target="lib\net8.0\Siemens.Sap.WebAPI.Common.dll" />
+  </files>
+</package>
